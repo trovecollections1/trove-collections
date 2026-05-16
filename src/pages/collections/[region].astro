@@ -1,0 +1,83 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import ProductCard from '../../components/ProductCard.astro';
+
+export async function getStaticPaths() {
+  const regionRoutes = [
+    { slug: 'east-asia', regionName: 'East Asia', title: 'East Asia',
+      intro: "Tokyo layovers, Korea runs, Auntie Kristen's antique-shop finds in China. East Asia is where the most-tested items live — my mom flies into Tokyo more than anywhere else, and her toiletry kit is half Korean skincare." },
+    { slug: 'europe', regionName: 'Europe', title: 'Europe',
+      intro: "Italy is Tanya's — she lived in Italy and just vacationed there. Germany comes through Auntie Kristen and her longtime German art-dealer friend. The Mainz beer mugs are from a layover trip my parents took. The UK pen came in from Cheryl Lynne." },
+    { slug: 'latin-america', regionName: 'Latin America', title: 'Latin America',
+      intro: "Costa Rican coffee my mom orders by the bag. An Argentine polenta pan the restaurant sold to Auntie Kristen after she finished the dish they cooked her in it. D'Elidas hot sauce that Auntie Kristen brought back from Panama and won't shut up about." },
+    { slug: 'levant', regionName: 'Levant', title: 'Levant',
+      intro: "Old Jerusalem from a Christmas-week layover my parents took together. Istanbul from trips we keep going back on. The kinds of things that hold a memory because we picked them up in the moment." },
+    { slug: 'oceania', regionName: 'Oceania', title: 'Oceania',
+      intro: "A hand-painted boomerang, sourced ethically through an Indigenous Art Code certified retailer. A Felan sweater and a leather wallet Auntie Kristen wore home from Sydney. Small region, real picks." },
+    { slug: 'travel-gear', regionName: 'Travel Gear', title: 'Travel Gear',
+      intro: "The bags, organizers, and small workhorses the curator circle actually carries. My mom has been pulling the Tumi ottoman out of her travel bag for years. The Brightline bag came in from my dad — international pilot, knows what holds up." },
+    { slug: 'eris', regionName: "Eris's Picks", title: "Eris's Picks",
+      intro: "Hey — this is my section. I'm 20, in college, headed for the Air Force after graduation. The things here are things I actually use and wear. Some of them are gifts I got from Mom (she has good taste). Some I bought myself. Treat this like a gift guide for the college-girl-in-your-life problem. — Eris" },
+  ];
+
+  const all = await getCollection('items');
+  return regionRoutes.map(r => ({
+    params: { region: r.slug },
+    props: { ...r, items: all.filter(i => i.data.region === r.regionName) },
+  }));
+}
+
+const { regionName, title, intro, items } = Astro.props;
+---
+
+<Layout title={`${title} — Trove Collections`}>
+  <header class="collection-header">
+    <p class="muted breadcrumb"><a href="/collections">All Collections</a></p>
+    <h1>{title}</h1>
+    <p class="intro">{intro}</p>
+  </header>
+
+  {items.length === 0 ? (
+    <p class="muted empty">No items in this collection yet — coming soon.</p>
+  ) : (
+    <div class="grid">
+      {items.map((item) => (
+        <ProductCard
+          name={item.data.name}
+          curator={item.data.curator}
+          blurb={item.body.slice(0, 220).trim() + (item.body.length > 220 ? '…' : '')}
+          photo={item.data.photo}
+          affiliateUrl={item.data.affiliateUrl}
+          pendingPhoto={item.data.pendingPhoto}
+          slug={item.slug}
+        />
+      ))}
+    </div>
+  )}
+</Layout>
+
+<style>
+  .collection-header {
+    margin-bottom: 2rem;
+  }
+  .breadcrumb { margin-bottom: 0.5rem; font-size: 0.9rem; }
+  .breadcrumb a { color: var(--muted); border: 0; }
+  .intro {
+    max-width: 60ch;
+    font-size: 1.05rem;
+    margin-top: 0.75rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  @media (min-width: 600px) {
+    .grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (min-width: 900px) {
+    .grid { grid-template-columns: 1fr 1fr 1fr; }
+  }
+  .empty { margin-top: 2rem; font-style: italic; }
+</style>

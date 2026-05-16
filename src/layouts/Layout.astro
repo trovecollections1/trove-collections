@@ -1,0 +1,102 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const {
+  title,
+  description = "Curated travel-inspired finds personally used by Eris's circle of pilot curators. Real picks, no algorithm.",
+} = Astro.props;
+
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import DisclosureBanner from '../components/DisclosureBanner.astro';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <DisclosureBanner />
+    <Footer />
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --bg: #FAF6F0;        /* same warm off-white as product photos */
+    --ink: #1F1B16;
+    --muted: #6B6258;
+    --rule: #E8DFD3;
+    --accent: #8B5E3C;    /* warm brown — heritage feel without being precious */
+    --max-width: 1100px;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-family: ui-serif, Georgia, "Iowan Old Style", "Apple Garamond", "Times New Roman", serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1;
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+  }
+
+  h1, h2, h3 {
+    font-family: ui-serif, Georgia, serif;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+  }
+
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); margin-bottom: 0.75rem; }
+  h2 { font-size: 1.5rem; margin: 2.5rem 0 1rem; }
+  h3 { font-size: 1.15rem; margin-bottom: 0.5rem; }
+
+  p { margin-bottom: 1rem; }
+
+  a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+  }
+  a:hover { opacity: 0.7; }
+
+  .muted { color: var(--muted); font-size: 0.95rem; }
+
+  hr {
+    border: 0;
+    border-top: 1px solid var(--rule);
+    margin: 2rem 0;
+  }
+</style>

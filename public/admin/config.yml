@@ -1,0 +1,57 @@
+backend:
+  name: github
+  repo: trovecollections1/trove-collections
+  branch: main
+  # OAuth proxy will be configured after first deploy.
+  # Until then, Mic edits via me; Decap goes live once OAuth is wired up.
+
+publish_mode: editorial_workflow
+
+media_folder: "public/images/items"
+public_folder: "/images/items"
+
+site_url: https://trovecollections.com
+display_url: https://trovecollections.com
+logo_url: /favicon.svg
+
+collections:
+  - name: "items"
+    label: "Items"
+    label_singular: "Item"
+    folder: "src/content/items"
+    create: true
+    slug: "{{slug}}"
+    summary: "{{name}} — {{region}} (picked by {{curator}})"
+    sortable_fields: ['name', 'region', 'curator']
+    view_groups:
+      - label: Region
+        field: region
+    fields:
+      - { label: "Item name", name: "name", widget: "string" }
+      - label: "Region"
+        name: "region"
+        widget: "select"
+        options:
+          - "East Asia"
+          - "Europe"
+          - "Latin America"
+          - "Levant"
+          - "North America"
+          - "Oceania"
+          - "Travel Gear"
+          - "Eris's Picks"
+      - { label: "Country", name: "country", widget: "string", required: false }
+      - { label: "City", name: "city", widget: "string", required: false }
+      - { label: "Curator (who picked it)", name: "curator", widget: "string", hint: "e.g. 'Micki', 'Auntie Kristen', 'Eris', 'Cheryl Lynne'" }
+      - { label: "Photo", name: "photo", widget: "image", required: false }
+      - { label: "Affiliate link", name: "affiliateUrl", widget: "string", required: false, hint: "Full URL with your affiliate tag" }
+      - { label: "Affiliate program", name: "affiliateProgram", widget: "string", required: false, hint: "e.g. 'Amazon', 'TirTir', 'Etsy via Awin'" }
+      - { label: "Price (USD)", name: "priceUSD", widget: "number", required: false, value_type: "float" }
+      - { label: "Featured on homepage?", name: "featured", widget: "boolean", required: false, default: false }
+      - { label: "Photo pending retake?", name: "pendingPhoto", widget: "boolean", required: false, default: false }
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        required: false
+        hint: "Optional — e.g. 'skincare', 'kitchen', 'gift'"
+      - { label: "Blurb (the real one)", name: "body", widget: "markdown" }

@@ -1,0 +1,95 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const regions = [
+  { label: 'East Asia', href: '/collections/east-asia', blurb: 'Tokyo layovers, Korean skincare runs, Kristen\'s antique-shop finds in China.' },
+  { label: 'Europe', href: '/collections/europe', blurb: 'Tuscan olive oil, Mainz beer mugs, Black Forest cuckoo clocks — and Tanya\'s Lake Como pantry.' },
+  { label: 'Latin America', href: '/collections/latin-america', blurb: 'Café Britt coffee, an Argentine polenta pan a restaurant sold to Kristen, D\'Elidas hot sauce from Panama.' },
+  { label: 'Levant', href: '/collections/levant', blurb: 'Old Jerusalem tapestry from a Christmas-week layover, things we brought back from Istanbul.' },
+  { label: 'Oceania', href: '/collections/oceania', blurb: 'A hand-painted boomerang, the Felan sweater Kristen wore home from Sydney.' },
+  { label: 'Travel Gear', href: '/collections/travel-gear', blurb: 'The bags, organizers, and small workhorses the curator circle actually carries.' },
+  { label: "Eris's Picks", href: '/collections/eris', blurb: 'Beauty, jewelry, and a few small things from my own shelf. — Eris' },
+];
+---
+
+<Layout title="Trove Collections — Curated travel-inspired finds">
+  <section class="hero">
+    <h1>Real picks. Brought home, used for years, then given as gifts.</h1>
+    <p class="lede">
+      Trove Collections is a small editorial shop. Every item here was personally
+      used by someone in our trusted curator circle — my mom, her sisters Kristen and
+      Angie, our family friends Cheryl Lynne and Tanya, my dad, and me. Pilots see a
+      lot of the world. These are the things we keep coming back to.
+    </p>
+    <p class="byline muted">
+      <em>Curated by Eris's circle — Eris, Micki, Kristen, Angie, Cheryl Lynne, Tanya.</em>
+    </p>
+  </section>
+
+  <hr />
+
+  <section>
+    <h2>Browse by region</h2>
+    <div class="region-grid">
+      {regions.map(r => (
+        <a href={r.href} class="region-card">
+          <h3>{r.label}</h3>
+          <p>{r.blurb}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .hero {
+    padding: 1rem 0 2rem;
+  }
+  .hero h1 {
+    max-width: 38ch;
+  }
+  .lede {
+    font-size: 1.1rem;
+    max-width: 60ch;
+    color: var(--ink);
+  }
+  .byline {
+    font-size: 0.95rem;
+    margin-top: 1rem;
+  }
+  .region-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  @media (min-width: 600px) {
+    .region-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (min-width: 900px) {
+    .region-grid { grid-template-columns: 1fr 1fr 1fr; }
+  }
+  .region-card {
+    display: block;
+    padding: 1.25rem;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    background: #FFFFFF;
+    color: var(--ink);
+    border-bottom: 1px solid var(--rule);
+    transition: border-color 0.15s ease;
+  }
+  .region-card:hover {
+    border-color: var(--accent);
+    opacity: 1;
+  }
+  .region-card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--ink);
+  }
+  .region-card p {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin: 0;
+  }
+</style>

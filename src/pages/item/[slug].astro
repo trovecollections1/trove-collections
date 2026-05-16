@@ -1,0 +1,91 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  const all = await getCollection('items');
+  return all.map(item => ({
+    params: { slug: item.slug },
+    props: { item },
+  }));
+}
+
+const { item } = Astro.props;
+const { Content } = await item.render();
+---
+
+<Layout title={`${item.data.name} — Trove Collections`} description={item.body.slice(0, 160)}>
+  <article class="item">
+    <p class="muted breadcrumb">
+      <a href="/collections">Collections</a>
+      &nbsp;/&nbsp;
+      <a href={`/collections/${
+        item.data.region === "Eris's Picks" ? 'eris' :
+        item.data.region.toLowerCase().replace(/\s+/g, '-')
+      }`}>{item.data.region}</a>
+    </p>
+
+    <h1>{item.data.name}</h1>
+    <p class="curator muted">Picked by {item.data.curator}</p>
+
+    {item.data.photo && !item.data.pendingPhoto && (
+      <div class="photo">
+        <img src={item.data.photo} alt={item.data.name} />
+      </div>
+    )}
+
+    <div class="blurb">
+      <Content />
+    </div>
+
+    {item.data.affiliateUrl && (
+      <a href={item.data.affiliateUrl} class="shop-button" rel="sponsored noopener" target="_blank">
+        Shop this &rarr;
+      </a>
+    )}
+
+    <p class="muted small disclosure-note">
+      Trove Collections may earn a small commission from purchases made through
+      this link. <a href="/disclosure">How affiliate links work here.</a>
+    </p>
+  </article>
+</Layout>
+
+<style>
+  .item { max-width: 720px; margin: 0 auto; }
+  .breadcrumb { margin-bottom: 1rem; font-size: 0.9rem; }
+  .breadcrumb a { color: var(--muted); border: 0; }
+  .breadcrumb a:hover { color: var(--ink); }
+  .curator { font-style: italic; margin-bottom: 1.5rem; }
+  .photo {
+    aspect-ratio: 1 / 1;
+    background: #FFFFFF;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 1.5rem 0;
+  }
+  .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .blurb {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+  .shop-button {
+    display: inline-block;
+    background: var(--accent);
+    color: #FFFFFF;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    border: 0;
+    font-size: 1rem;
+  }
+  .shop-button:hover { opacity: 0.85; }
+  .small { font-size: 0.85rem; }
+  .disclosure-note { margin-top: 1.5rem; }
+</style>

@@ -1,0 +1,88 @@
+---
+export interface Props {
+  name: string;
+  curator: string;
+  blurb: string;
+  photo?: string;
+  affiliateUrl?: string;
+  pendingPhoto?: boolean;
+  slug: string;
+}
+
+const { name, curator, blurb, photo, affiliateUrl, pendingPhoto, slug } = Astro.props;
+---
+
+<article class="card">
+  <a href={`/item/${slug}`} class="card-photo-link">
+    {photo && !pendingPhoto ? (
+      <img src={photo} alt={name} loading="lazy" />
+    ) : (
+      <div class="photo-placeholder">
+        <span>Photo coming soon</span>
+      </div>
+    )}
+  </a>
+  <div class="card-body">
+    <h3><a href={`/item/${slug}`}>{name}</a></h3>
+    <p class="curator muted">Picked by {curator}</p>
+    <p class="blurb">{blurb}</p>
+    {affiliateUrl && (
+      <a href={affiliateUrl} class="shop-link" rel="sponsored noopener" target="_blank">
+        Shop this &rarr;
+      </a>
+    )}
+  </div>
+</article>
+
+<style>
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding-bottom: 1.5rem;
+  }
+  .card-photo-link {
+    display: block;
+    border: 0;
+    background: #FFFFFF;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+  }
+  .card-photo-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .photo-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted);
+    font-size: 0.9rem;
+    font-style: italic;
+    background: var(--bg);
+  }
+  .card-body h3 a {
+    color: var(--ink);
+    border: 0;
+  }
+  .card-body h3 a:hover { color: var(--accent); }
+  .curator {
+    font-size: 0.85rem;
+    font-style: italic;
+    margin: 0;
+  }
+  .blurb {
+    font-size: 0.95rem;
+    margin: 0.5rem 0 0.75rem;
+  }
+  .shop-link {
+    font-size: 0.9rem;
+    display: inline-block;
+  }
+</style>

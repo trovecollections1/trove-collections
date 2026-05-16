@@ -1,0 +1,31 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const regions = [
+  { label: 'East Asia', href: '/collections/east-asia' },
+  { label: 'Europe', href: '/collections/europe' },
+  { label: 'Latin America', href: '/collections/latin-america' },
+  { label: 'Levant', href: '/collections/levant' },
+  { label: 'Oceania', href: '/collections/oceania' },
+  { label: 'Travel Gear', href: '/collections/travel-gear' },
+  { label: "Eris's Picks", href: '/collections/eris' },
+];
+---
+
+<Layout title="All Collections — Trove Collections">
+  <h1>All Collections</h1>
+  <ul class="all-list">
+    {regions.map(r => (
+      <li><a href={r.href}>{r.label}</a></li>
+    ))}
+  </ul>
+</Layout>
+
+<style>
+  .all-list {
+    list-style: none;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    line-height: 2;
+  }
+</style>
