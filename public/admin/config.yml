@@ -1,9 +1,29 @@
+# Use DecapBridge PKCE auth (required)
 backend:
-  name: github
+  name: git-gateway
   repo: trovecollections1/trove-collections
   branch: main
-  # OAuth proxy will be configured after first deploy.
-  # Until then, Mic edits via me; Decap goes live once OAuth is wired up.
+  auth_type: pkce
+  base_url: https://auth.decapbridge.com
+  auth_endpoint: /sites/70865d48-e894-465d-ab6d-8000dd84c644/pkce
+  auth_token_endpoint: /sites/70865d48-e894-465d-ab6d-8000dd84c644/token
+  gateway_url: https://gateway.decapbridge.com
+
+# See who did what (optional) — attributes each commit to the editor's email
+commit_messages:
+  create: 'Create {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> via DecapBridge'
+  update: 'Update {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> via DecapBridge'
+  delete: 'Delete {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> via DecapBridge'
+  uploadMedia: 'Upload "{{path}}" - {{author-name}} <{{author-login}}> via DecapBridge'
+  deleteMedia: 'Delete "{{path}}" - {{author-name}} <{{author-login}}> via DecapBridge'
+  openAuthoring: 'Message {{message}} - {{author-name}} <{{author-login}}> via DecapBridge'
+
+# Enable PKCE fields (recommended)
+auth:
+  email_claim: email
+  first_name_claim: first_name
+  last_name_claim: last_name
+  avatar_url_claim: avatar_url
 
 publish_mode: editorial_workflow
 
@@ -22,10 +42,12 @@ collections:
     create: true
     slug: "{{slug}}"
     summary: "{{name}} — {{region}} (picked by {{curator}})"
-    sortable_fields: ['name', 'region', 'curator']
+    sortable_fields: ['name', 'region', 'curator', 'subcategoryOrder', 'itemOrder']
     view_groups:
       - label: Region
         field: region
+      - label: Subcategory
+        field: subcategory
     fields:
       - { label: "Item name", name: "name", widget: "string" }
       - label: "Region"
@@ -40,10 +62,19 @@ collections:
           - "Oceania"
           - "Travel Gear"
           - "Eris's Picks"
+      - { label: "Subcategory", name: "subcategory", widget: "string", required: false, hint: "e.g. 'SKINCARE', 'STATIONERY', 'TREASURES WORTH BRINGING HOME'. ALL CAPS is the house style." }
+      - { label: "Subcategory order", name: "subcategoryOrder", widget: "number", required: false, value_type: "int", hint: "Lower = earlier in the page. Use gaps of 10 (10, 20, 30) so items can be re-ordered later." }
+      - { label: "Item order within subcategory", name: "itemOrder", widget: "number", required: false, value_type: "int", hint: "Lower = earlier within the subcategory." }
       - { label: "Country", name: "country", widget: "string", required: false }
       - { label: "City", name: "city", widget: "string", required: false }
       - { label: "Curator (who picked it)", name: "curator", widget: "string", hint: "e.g. 'Micki', 'Auntie Kristen', 'Eris', 'Cheryl Lynne'" }
-      - { label: "Photo", name: "photo", widget: "image", required: false }
+      - { label: "Main photo", name: "photo", widget: "image", required: false }
+      - label: "Additional photos (gallery)"
+        name: "additionalPhotos"
+        widget: "list"
+        required: false
+        hint: "Extra angles or details. Shows as a '+N' badge on the product card."
+        field: { label: "Photo", name: "photo", widget: "image" }
       - { label: "Affiliate link", name: "affiliateUrl", widget: "string", required: false, hint: "Full URL with your affiliate tag" }
       - { label: "Affiliate program", name: "affiliateProgram", widget: "string", required: false, hint: "e.g. 'Amazon', 'TirTir', 'Etsy via Awin'" }
       - { label: "Price (USD)", name: "priceUSD", widget: "number", required: false, value_type: "float" }
