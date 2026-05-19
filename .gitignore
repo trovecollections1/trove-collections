@@ -32,3 +32,4 @@ trove-collections-dist*.zip
 
 # one-off operational scripts (not part of the site source)
 sync-to-github.sh
+quick-push.sh
