@@ -1,0 +1,107 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+// Stories index — hand-curated for now; will become a content collection later.
+const stories = [
+  {
+    slug: 'the-cave-pub-in-mainz',
+    title: 'The pub that feels like a cave',
+    author: 'Micki',
+    region: 'Europe',
+    excerpt: 'A Mainz layover, an underground brewery, and the pair of beer mugs that came home in the suitcase.',
+    date: '2026-05',
+  },
+  {
+    slug: 'the-polenta-pan',
+    title: 'The polenta pan they sold me',
+    author: 'Auntie Kristen',
+    region: 'Latin America',
+    excerpt: "When the restaurant in Argentina realized how much I loved the pan they'd cooked my dinner in, they sold it to me on the spot.",
+    date: '2026-05',
+  },
+  {
+    slug: 'coming-soon',
+    title: 'More stories coming',
+    author: '',
+    region: '',
+    excerpt: "Christmas in Old Jerusalem · Tokyo antique-shop afternoons · The Y-12 ferry from Kunming to Lusaka · The cuckoo clock that came back from Bavaria — and others. Bookmark this page; we add as we travel.",
+    date: '',
+  },
+];
+---
+
+<Layout title="Stories — Trove Collections" description="Field notes, layover essays, and travel stories from the curator circle.">
+  <header class="stories-header">
+    <p class="muted breadcrumb"><a href="/about">← About</a></p>
+    <h1>Stories from the road</h1>
+    <p class="lede">
+      The longer versions of the stories behind some of the things on the site.
+      Layover essays, restaurant accidents, antique-shop afternoons. Written by
+      whoever brought the item home.
+    </p>
+  </header>
+
+  <div class="story-list">
+    {stories.map(story => (
+      <article class="story-card">
+        {story.slug === 'coming-soon' ? (
+          <h2>{story.title}</h2>
+        ) : (
+          <h2><a href={`/stories/${story.slug}`}>{story.title}</a></h2>
+        )}
+        {story.author && (
+          <p class="byline muted">
+            by {story.author}{story.region ? <> &middot; <em>{story.region}</em></> : null}
+          </p>
+        )}
+        <p class="excerpt">{story.excerpt}</p>
+      </article>
+    ))}
+  </div>
+
+  <hr />
+
+  <p class="muted" style="text-align: center;">
+    <a href="/heritage">Read about where this comes from →</a>
+  </p>
+</Layout>
+
+<style>
+  .stories-header { margin-bottom: 2.5rem; }
+  .breadcrumb { margin-bottom: 0.5rem; font-size: 0.9rem; }
+  .breadcrumb a { color: var(--muted); border: 0; }
+  .lede {
+    max-width: 60ch;
+    font-size: 1.1rem;
+    margin-top: 0.75rem;
+  }
+  .story-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .story-card {
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 2.5rem;
+  }
+  .story-card:last-child { border-bottom: 0; }
+  .story-card h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.5rem;
+  }
+  .story-card h2 a {
+    color: var(--ink);
+    border: 0;
+  }
+  .story-card h2 a:hover { color: var(--accent); }
+  .byline {
+    font-size: 0.9rem;
+    font-style: normal;
+    margin-bottom: 0.75rem;
+  }
+  .excerpt {
+    font-size: 1rem;
+    max-width: 65ch;
+    margin: 0;
+  }
+</style>

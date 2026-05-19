@@ -34,6 +34,16 @@ const { Content } = await item.render();
       </div>
     )}
 
+    {item.data.additionalPhotos && item.data.additionalPhotos.length > 0 && (
+      <div class="additional-photos">
+        {item.data.additionalPhotos.map((src) => (
+          <div class="extra-photo">
+            <img src={src} alt={item.data.name} loading="lazy" />
+          </div>
+        ))}
+      </div>
+    )}
+
     <div class="blurb">
       <Content />
     </div>
@@ -66,6 +76,28 @@ const { Content } = await item.render();
     margin: 1.5rem 0;
   }
   .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .additional-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 0 0 2rem;
+  }
+  @media (min-width: 600px) {
+    .additional-photos { grid-template-columns: repeat(3, 1fr); }
+  }
+  .extra-photo {
+    aspect-ratio: 1 / 1;
+    background: #FFFFFF;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .extra-photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;

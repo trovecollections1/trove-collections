@@ -22,13 +22,33 @@ export async function getStaticPaths() {
   ];
 
   const all = await getCollection('items');
-  return regionRoutes.map(r => ({
-    params: { region: r.slug },
-    props: { ...r, items: all.filter(i => i.data.region === r.regionName) },
-  }));
+  return regionRoutes.map(r => {
+    const items = all.filter(i => i.data.region === r.regionName);
+    // Group items by subcategory, preserving original order
+    const groups = new Map<string, typeof items>();
+    for (const item of items) {
+      const subcat = item.data.subcategory || '';
+      if (!groups.has(subcat)) groups.set(subcat, []);
+      groups.get(subcat)!.push(item);
+    }
+    // Sort items within each subcategory by itemOrder
+    for (const [, list] of groups) {
+      list.sort((a, b) => (a.data.itemOrder ?? 0) - (b.data.itemOrder ?? 0));
+    }
+    // Sort subcategories by subcategoryOrder (using min from items in group)
+    const sortedGroups = Array.from(groups.entries()).sort((a, b) => {
+      const aOrder = a[1][0]?.data.subcategoryOrder ?? 999;
+      const bOrder = b[1][0]?.data.subcategoryOrder ?? 999;
+      return aOrder - bOrder;
+    });
+    return {
+      params: { region: r.slug },
+      props: { ...r, items, sortedGroups },
+    };
+  });
 }
 
-const { regionName, title, intro, items } = Astro.props;
+const { regionName, title, intro, items, sortedGroups } = Astro.props;
 ---
 
 <Layout title={`${title} — Trove Collections`}>
@@ -41,17 +61,25 @@ const { regionName, title, intro, items } = Astro.props;
   {items.length === 0 ? (
     <p class="muted empty">No items in this collection yet — coming soon.</p>
   ) : (
-    <div class="grid">
-      {items.map((item) => (
-        <ProductCard
-          name={item.data.name}
-          curator={item.data.curator}
-          blurb={item.body.slice(0, 220).trim() + (item.body.length > 220 ? '…' : '')}
-          photo={item.data.photo}
-          affiliateUrl={item.data.affiliateUrl}
-          pendingPhoto={item.data.pendingPhoto}
-          slug={item.slug}
-        />
+    <div class="subcategories">
+      {sortedGroups.map(([subcat, list]) => (
+        <section class="subcategory">
+          {subcat && <h2 class="subcat-header">{subcat}</h2>}
+          <div class="grid">
+            {list.map((item) => (
+              <ProductCard
+                name={item.data.name}
+                curator={item.data.curator}
+                blurb={item.body.slice(0, 220).trim() + (item.body.length > 220 ? '…' : '')}
+                photo={item.data.photo}
+                additionalPhotos={item.data.additionalPhotos}
+                affiliateUrl={item.data.affiliateUrl}
+                pendingPhoto={item.data.pendingPhoto}
+                slug={item.slug}
+              />
+            ))}
+          </div>
+        </section>
       ))}
     </div>
   )}
@@ -67,6 +95,22 @@ const { regionName, title, intro, items } = Astro.props;
     max-width: 60ch;
     font-size: 1.05rem;
     margin-top: 0.75rem;
+  }
+  .subcategories {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .subcategory { margin: 0; }
+  .subcat-header {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--rule);
   }
   .grid {
     display: grid;

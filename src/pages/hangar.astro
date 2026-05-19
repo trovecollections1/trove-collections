@@ -1,0 +1,160 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const sections = [
+  {
+    title: 'Grandpa Jim: 1928 → 1972',
+    intro: "Lt. Col. James A. Philpott. First solo at 16, in a Velie Mono Coupe. What followed: TWA test pilot, 490th Bombardment Squadron command, Wright Field foreign-aircraft evaluation, KC-135 checkout at Edwards, AMPP president, retired TWA September 1972. Photographs in roughly chronological order.",
+    photos: [
+      { src: '/images/heritage/grandpa-jim-1928-solo-gift.jpg', caption: "A commemorative gift marking the 60th anniversary of his first solo on September 8, 1928." },
+      { src: '/images/heritage/grandpa-jim-p12c.jpg', caption: "Grandpa Jim in Hap Arnold's P-12C at Randolph Field — early Army Air Corps years." },
+      { src: '/images/heritage/p40-beverly.jpg', caption: "The P-40 he named *Beverly* after his wife. The framed family copy carries the inscription: \"To the only Beverly, From The Pilot.\"" },
+      { src: '/images/heritage/skull-and-wings.jpg', caption: "The Skull & Wings squadron insignia — originated in his command of the 490th." },
+      { src: '/images/heritage/490th-formation.jpg', caption: "490th Bombardment Squadron in formation. He took command October 20, 1942." },
+      { src: '/images/heritage/grandpa-jim-beverly-b25.jpg', caption: "Grandpa Jim and Beverly with the B-25 *Flagship of the Skull & Wings.*" },
+      { src: '/images/heritage/burma-bridge-busters.jpg', caption: "The 490th 'Burma Bridge Busters' in a wartime magazine illustration." },
+      { src: '/images/heritage/wright-field-zero.jpg', caption: "Wright Field. Late-war Foreign Aircraft Evaluation — flight-testing a captured Japanese Zero against US fighters." },
+      { src: '/images/heritage/grandpa-jim-hoover-p51.jpg', caption: "Grandpa Jim in Bob Hoover's P-51 *Old Yeller* at an airshow. The Hoover friendship began at Edwards in the post-war years." },
+      { src: '/images/heritage/grandpa-jim-pancho-barnes.jpg', caption: "Grandpa Jim and Pancho Barnes at a Ninety-Nines event. Barnes founded the Associated Motion Picture Pilots; he would later lead it." },
+      { src: '/images/heritage/grandpa-jim-ampp.jpg', caption: "Grandpa Jim at an Associated Motion Picture Pilots event — the Hollywood stunt-pilot guild he served as president." },
+      { src: '/images/heritage/grandpa-jim-twa.jpg', caption: "A TWA airframe from his line-pilot years. Hired 1940, retired September 1972." },
+      { src: '/images/heritage/grandpa-jim-medals.jpg', caption: "Military medals and squadron insignia in the family display case." },
+    ],
+  },
+  {
+    title: 'The Hollywood Stearmans',
+    intro: "Before the airline years, the family ran an aerial-advertising business out of Torrance Airport. Boeing Stearman PT-17 biplanes in red-and-white sunburst paint, working banner-tow, sky-typing, and TV commercial film aviation.",
+    photos: [
+      { src: '/images/heritage/grandpa-jim-john-stearman.jpg', caption: "Grandpa Jim and Captain John Philpott with the family Stearman PT-17. The visual hand-off between Generation 1 and Generation 2." },
+      { src: '/images/heritage/aerial-advertising-stearmans.jpg', caption: "The family Stearmans, Hollywood aerial-advertising era — original red-and-white sunburst paint." },
+      { src: '/images/heritage/wingwax-aircraft.jpg', caption: "Another aircraft from the family aerial-advertising operation. 'Wingwax' livery — type pending identification." },
+    ],
+  },
+  {
+    title: 'Captain John',
+    intro: "My grandfather. Aerial Advertising → Sierra Pacific Airways → Continental Airlines, hired October 1972, retired #1 on the seniority list 42 years later. Line Check Airman, A&P-licensed mechanic, six transport types flown across four decades.",
+    photos: [
+      { src: '/images/heritage/captain-john-current.jpg', caption: "Captain John at his current aircraft — the post-retirement years are still spent in the air." },
+    ],
+  },
+  {
+    title: 'Generation 3 — the sister captains',
+    intro: "My mom Micki, Auntie Kristen, Auntie Angie — three pilots at major US airlines. Mom started flying cargo and commuters domestically, now flies international. Auntie Kristen flies the 777. Auntie Angie flies the 757/767.",
+    photos: [
+      { src: '/images/heritage/family-portrait-4-pilots.jpg', caption: "Captain John with his three pilot daughters — Generation 2 and Generation 3 in one frame." },
+      { src: '/images/heritage/micki-kristen-flying.jpg', caption: "My mom and Auntie Kristen, flying together." },
+    ],
+  },
+  {
+    title: 'The Y-12 ferry — Kunming → Lusaka',
+    intro: "Years ago my mom ferried a Harbin Y-12 from Kunming, China to Lusaka, Zambia — a multi-leg crossing of Asia and Africa in a twin-turboprop utility plane. These photos are from the trip.",
+    photos: [
+      { src: '/images/heritage/y12-ferry-tanzania.jpg', caption: "The Y-12 airborne over Tanzania, mid-ferry." },
+      { src: '/images/heritage/y12-tanzania-2.jpg', caption: "Another Tanzania frame, different angle." },
+      { src: '/images/heritage/y12-vymd-1.jpg', caption: "On the ground at a fuel stop along the route." },
+      { src: '/images/heritage/y12-hand-pumping-fuel.jpg', caption: "Hand-pumping fuel into the Y-12. Ferrying an airplane across continents means improvising at every stop where infrastructure doesn't match expectations." },
+    ],
+  },
+  {
+    title: 'Generation 4',
+    intro: "My cousin Connor — SkyWest CRJ Captain by day, Pitts S1J aerobatic pilot on weekends. And me — paused for college, will pick it back up someday.",
+    photos: [
+      { src: '/images/heritage/connor-pitts-s1j.jpg', caption: "My cousin Connor with his Pitts S1J." },
+      { src: '/images/heritage/pitts-airborne.jpg', caption: "Taxiing in after the cross-country delivery flight — Connor flew the Pitts home himself the day he bought it." },
+      { src: '/images/heritage/eris-first-flight-lesson.jpg', caption: "Me, on my first flight lesson — March 2022." },
+      { src: '/images/heritage/eris-toddler-757.jpg', caption: "Me, much earlier — in the B757 captain seat as a toddler. The cockpit is family scenery growing up." },
+    ],
+  },
+];
+---
+
+<Layout title="The Hangar — Trove Collections" description="A century of photographs from one family's hangar. Four generations of Philpott pilots.">
+  <article class="hangar">
+    <p class="muted breadcrumb"><a href="/heritage">← Heritage</a></p>
+
+    <h1>The Hangar</h1>
+    <p class="lede">
+      A century of photographs from one family's hangar — pulled from envelopes,
+      shoeboxes, and the wall of my grandfather's den. Roughly chronological.
+      Captions where we know the story. The fuller versions live on the
+      <a href="/heritage">heritage page</a>.
+    </p>
+
+    {sections.map(section => (
+      <section class="gen-section">
+        <h2>{section.title}</h2>
+        <p class="intro">{section.intro}</p>
+        <div class="photo-grid">
+          {section.photos.map(photo => (
+            <figure>
+              <img src={photo.src} alt={section.title} loading="lazy" />
+              <figcaption set:html={photo.caption.replace(/\*([^*]+)\*/g, '<em>$1</em>')}></figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+    ))}
+
+    <hr />
+
+    <p class="muted" style="text-align: center;">
+      <a href="/heritage">← Back to Heritage</a> &nbsp; · &nbsp;
+      <a href="/stories">Read stories from the road →</a>
+    </p>
+  </article>
+</Layout>
+
+<style>
+  .hangar { max-width: 1000px; margin: 0 auto; }
+  .breadcrumb { margin-bottom: 1rem; font-size: 0.9rem; }
+  .breadcrumb a { color: var(--muted); border: 0; }
+  .breadcrumb a:hover { color: var(--ink); }
+  .lede {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 60ch;
+    margin-bottom: 3rem;
+  }
+  .gen-section { margin: 3rem 0; }
+  .gen-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .intro {
+    max-width: 65ch;
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.55;
+  }
+  .photo-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  @media (min-width: 600px) {
+    .photo-grid { grid-template-columns: 1fr 1fr; }
+  }
+  figure { margin: 0; }
+  figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    border: 1px solid var(--rule);
+  }
+  figure figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.4;
+    font-style: italic;
+  }
+  hr {
+    border: 0;
+    border-top: 1px solid var(--rule);
+    margin: 3rem 0 2rem;
+  }
+</style>

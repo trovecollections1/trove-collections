@@ -4,12 +4,15 @@ export interface Props {
   curator: string;
   blurb: string;
   photo?: string;
+  additionalPhotos?: string[];
   affiliateUrl?: string;
   pendingPhoto?: boolean;
   slug: string;
 }
 
-const { name, curator, blurb, photo, affiliateUrl, pendingPhoto, slug } = Astro.props;
+const { name, curator, blurb, photo, additionalPhotos, affiliateUrl, pendingPhoto, slug } = Astro.props;
+const photoCount = 1 + (additionalPhotos?.length ?? 0);
+const hasMultiple = (additionalPhotos?.length ?? 0) > 0 && photo && !pendingPhoto;
 ---
 
 <article class="card">
@@ -20,6 +23,9 @@ const { name, curator, blurb, photo, affiliateUrl, pendingPhoto, slug } = Astro.
       <div class="photo-placeholder">
         <span>Photo coming soon</span>
       </div>
+    )}
+    {hasMultiple && (
+      <span class="photo-count" aria-label={`${photoCount} photos`}>+{photoCount - 1}</span>
     )}
   </a>
   <div class="card-body">
@@ -49,6 +55,19 @@ const { name, curator, blurb, photo, affiliateUrl, pendingPhoto, slug } = Astro.
     border-radius: 4px;
     overflow: hidden;
     aspect-ratio: 1 / 1;
+    position: relative;
+  }
+  .photo-count {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: rgba(31, 27, 22, 0.78);
+    color: #FAF6F0;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
+    letter-spacing: 0.02em;
   }
   .card-photo-link img {
     width: 100%;

@@ -21,3 +21,14 @@ pnpm-debug.log*
 # editors
 .vscode/
 .idea/
+
+# credentials — temporary token files used during manual git operations
+pat-temp.txt
+pat-temp*.txt
+*.pat
+
+# manual deploy artifacts (zips dropped into Cloudflare Pages UI)
+trove-collections-dist*.zip
+
+# one-off operational scripts (not part of the site source)
+sync-to-github.sh
