@@ -1,12 +1,9 @@
 # Builds the Astro site and deploys to Cloudflare Pages.
+# Auto-deploys on every push to main (Decap CMS edits, code pushes, etc.)
+# and can also be triggered manually from the Actions tab.
 #
-# !!! AUTO-DEPLOY ON PUSH IS DISABLED !!!
-# The local Site Code has 89+ items and many new pages that aren't
-# in this repo yet. If push-trigger were active, every CMS edit would
-# REPLACE the live site with this stale repo state and shrink it.
-# Re-enable the 'on: push' trigger after the full local-to-repo sync
-# is complete. For now this workflow can only be run manually
-# (Actions tab -> Deploy to Cloudflare Pages -> Run workflow).
+# Bypasses the broken Cloudflare-GitHub OAuth integration by using the
+# Cloudflare API directly with an account-scoped API token.
 #
 # Required GitHub repository secrets:
 #   - CLOUDFLARE_API_TOKEN   (token scoped to "Cloudflare Pages: Edit")
@@ -15,6 +12,8 @@
 name: Deploy to Cloudflare Pages
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 jobs:
