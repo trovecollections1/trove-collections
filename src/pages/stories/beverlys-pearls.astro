@@ -9,10 +9,14 @@ import Layout from '../../layouts/Layout.astro';
     <h1>Beverly's pearls</h1>
     <p class="byline muted">by Eris &middot; <em>North America</em></p>
 
-    <p class="lede">
-      <em>Photo placeholder: the double strand of pearls in the dark velvet
-      jewelry case — moody, reverent.</em>
-    </p>
+    <figure class="story-image">
+      <img
+        src="/images/heritage/beverlys-pearls.jpg"
+        alt="Beverly Philpott's pearls — the double strand passed down to Mic, photographed in a dark velvet jewelry case."
+        width="1600"
+        height="1200"
+      />
+    </figure>
 
     <p>
       My great-grandmother Beverly Philpott was married to my great-grandfather
@@ -85,6 +89,15 @@ import Layout from '../../layouts/Layout.astro';
     margin-bottom: 1.5rem;
   }
   .lede { font-size: 1.1rem; margin-bottom: 1.5rem; }
+  .story-image {
+    margin: 0 0 2rem;
+  }
+  .story-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
   p { max-width: 65ch; font-size: 1.05rem; line-height: 1.65; }
   hr {
     border: 0;

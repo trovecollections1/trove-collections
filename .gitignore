@@ -33,3 +33,11 @@ trove-collections-dist*.zip
 # one-off operational scripts (not part of the site source)
 sync-to-github.sh
 quick-push.sh
+
+# image recon working files dropped at Site Code root (composited into public/images/items/)
+/*.png
+/*.PNG
+/*.jpg
+/*.JPG
+/*.jpeg
+/*.JPEG

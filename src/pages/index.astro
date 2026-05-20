@@ -14,16 +14,29 @@ const regions = [
 
 <Layout title="Trove Collections — Curated travel-inspired finds">
   <section class="hero">
-    <h1>Real picks. The things we use. The gifts we'd actually give.</h1>
-    <p class="lede">
-      Trove Collections is a small editorial shop. Every item here was personally
-      used by someone in our trusted curator circle — my mom, my Aunties Kristen
-      and Angie, our family friends Cheryl Lynne and Tanya, and me. Their work
-      takes them all over the world. These are the things they keep coming back to.
-    </p>
-    <p class="byline muted">
-      <em>Curated by Eris's circle — Eris, Micki, Kristen, Angie, Cheryl Lynne, Tanya.</em>
-    </p>
+    <div class="hero-image">
+      <img
+        src="/images/heritage/beverlys-pearls.jpg"
+        alt="Beverly Philpott's pearls — the double strand passed down to Mic, photographed in a dark velvet jewelry case."
+        width="1600"
+        height="1200"
+      />
+      <p class="hero-caption muted">
+        Beverly's pearls. <a href="/stories/beverlys-pearls">Read the story →</a>
+      </p>
+    </div>
+    <div class="hero-text">
+      <h1>Real picks. The things we use. The gifts we'd actually give.</h1>
+      <p class="lede">
+        Trove Collections is a small editorial shop. Every item here was personally
+        used by someone in our trusted curator circle — my mom, my Aunties Kristen
+        and Angie, our family friends Cheryl Lynne and Tanya, and me. Their work
+        takes them all over the world. These are the things they keep coming back to.
+      </p>
+      <p class="byline muted">
+        <em>Curated by Eris's circle — Eris, Micki, Kristen, Angie, Cheryl Lynne, Tanya.</em>
+      </p>
+    </div>
   </section>
 
   <hr />
@@ -44,9 +57,42 @@ const regions = [
 <style>
   .hero {
     padding: 1rem 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
   }
-  .hero h1 {
+  @media (min-width: 720px) {
+    .hero {
+      grid-template-columns: minmax(0, 45fr) minmax(0, 55fr);
+      gap: 2.5rem;
+    }
+  }
+  .hero-image {
+    margin: 0;
+  }
+  .hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  .hero-caption {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin: 0.75rem 0 0;
+    text-align: center;
+  }
+  .hero-caption a {
+    color: var(--muted);
+    border: 0;
+  }
+  .hero-caption a:hover {
+    color: var(--accent);
+  }
+  .hero-text h1 {
     max-width: 38ch;
+    margin-top: 0;
   }
   .lede {
     font-size: 1.1rem;
