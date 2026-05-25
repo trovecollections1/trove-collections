@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import FramedPhoto from '../components/FramedPhoto.astro';
 
 const regions = [
   { label: 'East Asia', href: '/collections/east-asia', blurb: 'Tokyo layovers, Korean skincare runs, Kristen\'s antique-shop finds in China.' },
@@ -15,11 +16,11 @@ const regions = [
 <Layout title="Trove Collections — Curated travel-inspired finds">
   <section class="hero">
     <div class="hero-image">
-      <img
+      <FramedPhoto
         src="/images/heritage/beverlys-pearls.jpg"
         alt="Beverly Philpott's pearls — the double strand passed down to Mic, photographed in a dark velvet jewelry case."
-        width="780"
-        height="1600"
+        width={780}
+        height={1600}
       />
       <p class="hero-caption muted">
         Beverly's pearls. <a href="/stories/beverlys-pearls">Read the story →</a>
@@ -71,12 +72,9 @@ const regions = [
   .hero-image {
     margin: 0;
   }
-  .hero-image img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-  }
+  /* Note: pearls photo is rendered via <FramedPhoto>, which carries its own
+     walnut-frame + cream-mat styling. The legacy .hero-image img rule was
+     removed to avoid border-radius conflicts. */
   .hero-caption {
     font-size: 0.9rem;
     font-style: italic;

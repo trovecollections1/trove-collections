@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import FramedPhoto from '../../components/FramedPhoto.astro';
 ---
 
 <Layout title="Beverly's pearls — Trove Collections">
@@ -10,11 +11,11 @@ import Layout from '../../layouts/Layout.astro';
     <p class="byline muted">by Eris &middot; <em>North America</em></p>
 
     <figure class="story-image">
-      <img
+      <FramedPhoto
         src="/images/heritage/beverlys-pearls.jpg"
         alt="Beverly Philpott's pearls — the double strand passed down to Mic, photographed in a dark velvet jewelry case."
-        width="780"
-        height="1600"
+        width={780}
+        height={1600}
       />
     </figure>
 
@@ -92,12 +93,9 @@ import Layout from '../../layouts/Layout.astro';
   .story-image {
     margin: 0 0 2rem;
   }
-  .story-image img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-  }
+  /* Pearls photo renders via <FramedPhoto> — walnut frame + cream mat styling
+     lives in the component itself; legacy .story-image img rule removed to
+     avoid border-radius conflicts. */
   p { max-width: 65ch; font-size: 1.05rem; line-height: 1.65; }
   hr {
     border: 0;

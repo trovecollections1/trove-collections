@@ -1,0 +1,68 @@
+---
+// Walnut-framed photo with cream mat — the "professionally framed" treatment.
+// Used for heirloom imagery (Beverly's pearls hero, story page) where the
+// photo should read as a framed object on display.
+//
+// Composition (outside → inside):
+//   1. Drop shadow
+//   2. Thin outer walnut edge (1px)
+//   3. Walnut frame body with subtle bevel (~14px)
+//   4. Walnut secondary line (1px)
+//   5. Cream mat (~28px)
+//   6. Thin walnut inner liner directly on photo (1px)
+
+interface Props {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+}
+
+const { src, alt, width, height } = Astro.props;
+---
+
+<div class="framed-photo">
+  <div class="framed-photo-mat">
+    <img
+      class="framed-photo-img"
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+    />
+  </div>
+</div>
+
+<style>
+  .framed-photo {
+    /* Outer walnut frame body with subtle wood-grain bevel */
+    background:
+      linear-gradient(135deg, #5C3E28 0%, #4A3220 28%, #4A3220 72%, #2A1C12 100%);
+    padding: 14px;
+    border: 1px solid #2A1C12;
+    box-shadow:
+      inset 1px 1px 0 rgba(108, 76, 48, 0.6),    /* top/left wood highlight */
+      inset -1px -1px 0 rgba(42, 28, 18, 0.9),    /* bottom/right wood shadow */
+      0 10px 22px rgba(40, 28, 18, 0.30),         /* main drop shadow */
+      0 2px 4px rgba(40, 28, 18, 0.18);           /* close shadow for grounding */
+  }
+  .framed-photo-mat {
+    background: #F4EEE0;  /* cream mat */
+    padding: 28px;
+    border: 1px solid #2A1C12;  /* walnut secondary line */
+  }
+  .framed-photo-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0;           /* sharp corners — no rounding on framed photos */
+    outline: 1px solid #2A1C12; /* thin walnut inner liner on the photo itself */
+    outline-offset: 0;
+  }
+
+  /* Tighter on small viewports so frame doesn't dominate */
+  @media (max-width: 600px) {
+    .framed-photo { padding: 10px; }
+    .framed-photo-mat { padding: 18px; }
+  }
+</style>
