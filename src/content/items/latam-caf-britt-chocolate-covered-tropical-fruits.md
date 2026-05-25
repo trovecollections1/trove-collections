@@ -1,9 +1,9 @@
 ---
 name: "Café Britt Chocolate-covered Tropical Fruits (Guava, Coconut, Passion Fruit, Pineapple)"
 region: "Latin America"
-subcategory: "COSTA RICA (Café Britt — curator TBD)"
+subcategory: "COSTA RICA (Café Britt — Micki)"
 subcategoryOrder: 1
-itemOrder: 3
+itemOrder: 5
 country: "Costa Rica"
 curator: "Micki"
 pendingPhoto: true
