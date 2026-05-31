@@ -2,11 +2,20 @@
 export interface Props {
   title: string;
   description?: string;
+  /**
+   * Render the FTC affiliate disclosure banner at the top of <main>.
+   * Per Trevor Crow (Doida Crow Legal, 2026-05-25) the short disclosure must
+   * be hard-to-miss and appear with the endorsement, not only above the
+   * footer. Default true. Pages without any affiliate links (About, Contact,
+   * the disclosure page itself) should pass false.
+   */
+  topDisclosure?: boolean;
 }
 
 const {
   title,
   description = "Curated travel-inspired finds personally used by Eris's circle of pilot curators. Real picks, no algorithm.",
+  topDisclosure = true,
 } = Astro.props;
 
 import Header from '../components/Header.astro';
@@ -26,6 +35,7 @@ import DisclosureBanner from '../components/DisclosureBanner.astro';
   </head>
   <body>
     <Header />
+    {topDisclosure && <DisclosureBanner />}
     <main>
       <slot />
     </main>
