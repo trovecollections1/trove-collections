@@ -1,5 +1,5 @@
 ---
-name: "Brooks Brothers women's non-iron shirts"
+name: "Brooks Brothers — Mic's daily rotation"
 region: "North America"
 subcategory: "LADIES BUSINESS ATTIRE"
 subcategoryOrder: 3
@@ -9,6 +9,7 @@ curator: "Mic"
 photo: /images/items/na-brooks-brothers-women-s-non-iron-shirts.png
 pendingPhoto: false
 additionalPhotos:
+  - /images/items/na-brooks-brothers-white-blouse-v2.png
   - /images/items/na-brooks-brothers-shirt-1624.png
   - /images/items/na-brooks-brothers-shirt-1625.png
   - /images/items/na-brooks-brothers-shirt-1626.png
@@ -26,7 +27,6 @@ additionalPhotos:
   - /images/items/na-brooks-brothers-shirt-1638.png
   - /images/items/na-brooks-brothers-shirt-1639.png
   - /images/items/na-brooks-brothers-shirt-1640.png
-  - /images/items/na-brooks-brothers-shirt-1641.png
 ---
 
 Brooks Brothers (since 1818) defined the American business shirt. Their non-iron women's line is Mic's daily-rotation workhorse — multiple colorways, multiple fits, all built to outlast the trend cycle. The daily work-wear that just works. — Eris
