@@ -8,6 +8,8 @@ country: "USA"
 curator: "Mic"
 photo: /images/items/na-talbots-scarves.png
 pendingPhoto: false
+additionalPhotos:
+  - /images/items/na-talbots-scarves-yellow.png
 ---
 
 The Talbots scarf — the finishing layer that changes an outfit's mood without changing it. Mic's rotation includes green and yellow; easy way to swap energy without swapping the wardrobe. — Eris

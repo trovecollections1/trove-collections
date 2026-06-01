@@ -45,3 +45,10 @@ quick-push.sh
 # Raw NA item .jpeg uploads (replaced by processed .png versions)
 public/images/items/na-*.jpeg
 public/images/items/na-*.jpg
+
+# Replaced/removed items
+src/content/items/na-ugg-classic-mini-ultra-mini-micro-sheepskin-boots.md
+src/content/items/na-grandmother-s-pearls-heritage-piece.md
+public/images/items/na-ugg-classic-mini-ultra-mini-micro-sheepskin-boots.png
+public/images/items/na-grandmother-s-pearls-heritage-piece.png
+public/images/items/na-michael-kors-patent-leather-heel.png

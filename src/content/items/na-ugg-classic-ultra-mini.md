@@ -1,0 +1,13 @@
+---
+name: "UGG Classic Ultra Mini sheepskin boot"
+region: "North America"
+subcategory: "MIC'S UGG ROTATION"
+subcategoryOrder: 2
+itemOrder: 2
+country: "USA"
+curator: "Mic"
+photo: /images/items/na-ugg-classic-ultra-mini.png
+pendingPhoto: false
+---
+
+Shorter than the Mini, the Ultra Mini sits right at the ankle. Same UGG sheepskin construction, lower-profile silhouette for the days a fuller boot is too much shoe. — Eris
