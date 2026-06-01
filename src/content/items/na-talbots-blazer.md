@@ -1,12 +1,13 @@
 ---
 name: "Talbots blazer"
 region: "North America"
-subcategory: "MIC'S WORK CLOSET — UP TOP"
-subcategoryOrder: 4
-itemOrder: 4
+subcategory: "LADIES BUSINESS ATTIRE"
+subcategoryOrder: 3
+itemOrder: 12
 country: "USA"
 curator: "Mic"
-pendingPhoto: true
+photo: /images/items/na-talbots-blazer.png
+pendingPhoto: false
 ---
 
 The structured layer Mic reaches for when the outfit needs to read 'meeting.' Talbots cuts for grown-up bodies and shoulders that have done some living. — Eris

@@ -1,12 +1,13 @@
 ---
 name: "Diamond stud earrings"
 region: "North America"
-subcategory: "MIC'S JEWELRY BOX (+ THE HERITAGE STRAND)"
-subcategoryOrder: 10
-itemOrder: 3
+subcategory: "LADIES BUSINESS ATTIRE"
+subcategoryOrder: 3
+itemOrder: 29
 country: "USA"
 curator: "Mic"
-pendingPhoto: true
+photo: /images/items/na-diamond-stud-earrings.png
+pendingPhoto: false
 ---
 
 Diamond studs — the foundation jewelry piece. Mic wears them with everything. — Eris

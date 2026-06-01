@@ -1,12 +1,13 @@
 ---
 name: "Cozy Earth bamboo socks"
 region: "North America"
-subcategory: "MIC'S LOUNGE DRAWER"
-subcategoryOrder: 2
+subcategory: "MIC'S COZY EARTH PICKS"
+subcategoryOrder: 1
 itemOrder: 4
 country: "USA"
 curator: "Mic"
-pendingPhoto: true
+photo: /images/items/na-cozy-earth-bamboo-socks.png
+pendingPhoto: false
 ---
 
 Same bamboo viscose construction as the loungewear, in sock form. Breathable, soft, stays-up. Multiple colorways — the sock that completes the Cozy Earth uniform. — Eris

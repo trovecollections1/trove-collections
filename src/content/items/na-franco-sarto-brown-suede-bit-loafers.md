@@ -1,8 +1,8 @@
 ---
 name: "Franco Sarto brown suede bit loafers"
 region: "North America"
-subcategory: "MIC'S SHOE RACK"
-subcategoryOrder: 1
+subcategory: "LADIES BUSINESS ATTIRE"
+subcategoryOrder: 3
 itemOrder: 1
 country: "USA"
 curator: "Mic"

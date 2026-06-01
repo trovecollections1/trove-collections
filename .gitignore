@@ -41,3 +41,7 @@ quick-push.sh
 /*.JPG
 /*.jpeg
 /*.JPEG
+
+# Raw NA item .jpeg uploads (replaced by processed .png versions)
+public/images/items/na-*.jpeg
+public/images/items/na-*.jpg
