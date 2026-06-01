@@ -6,7 +6,10 @@ subcategoryOrder: 3
 itemOrder: 6
 country: "USA"
 curator: "Mic"
-pendingPhoto: true
+photo: /images/items/na-michael-kors-patent-leather-heel.png
+additionalPhotos:
+  - /images/items/na-michael-kors-patent-leather-heel-side.png
+pendingPhoto: false
 ---
 
 Michael Kors does accessible American luxury at scale. Patent leather heel for evening, events, and the times when a polished gloss matters. The reliable evening choice. — Eris
