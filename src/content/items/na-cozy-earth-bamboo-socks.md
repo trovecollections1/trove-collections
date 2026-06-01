@@ -8,8 +8,6 @@ country: "USA"
 curator: "Mic"
 photo: /images/items/na-cozy-earth-bamboo-socks.png
 pendingPhoto: false
-additionalPhotos:
-  - /images/items/na-cozy-earth-bamboo-socks-grey.png
 ---
 
 Same bamboo viscose construction as the loungewear, in sock form. Breathable, soft, stays-up. Multiple colorways — the sock that completes the Cozy Earth uniform. — Eris
