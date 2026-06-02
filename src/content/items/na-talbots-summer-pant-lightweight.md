@@ -6,7 +6,7 @@ subcategoryOrder: 3
 itemOrder: 17
 country: "USA"
 curator: "Mic"
-photo: /images/items/na-talbots-summer-pant-lightweight.png
+photo: /images/items/na-talbots-summer-pant-lightweight.png?v=2
 pendingPhoto: false
 ---
 

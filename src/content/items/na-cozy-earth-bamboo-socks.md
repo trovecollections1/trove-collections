@@ -6,7 +6,7 @@ subcategoryOrder: 1
 itemOrder: 4
 country: "USA"
 curator: "Mic"
-photo: /images/items/na-cozy-earth-bamboo-socks.png
+photo: /images/items/na-cozy-earth-bamboo-socks.png?v=2
 pendingPhoto: false
 ---
 

@@ -6,7 +6,7 @@ subcategoryOrder: 3
 itemOrder: 23
 country: "USA"
 curator: "Mic"
-photo: /images/items/na-tahari-for-kenar-pant-vintage.png
+photo: /images/items/na-tahari-for-kenar-pant-vintage.png?v=2
 pendingPhoto: false
 ---
 

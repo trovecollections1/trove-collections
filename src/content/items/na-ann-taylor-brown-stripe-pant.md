@@ -6,7 +6,7 @@ subcategoryOrder: 3
 itemOrder: 19
 country: "USA"
 curator: "Mic"
-photo: /images/items/na-ann-taylor-brown-stripe-pant.png
+photo: /images/items/na-ann-taylor-brown-stripe-pant.png?v=2
 pendingPhoto: false
 ---
 
