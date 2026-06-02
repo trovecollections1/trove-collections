@@ -13,9 +13,14 @@ const regions = [
 
 <header>
   <div class="header-inner">
-    <a href="/" class="brand">
-      <span class="brand-name">Trove Collections</span>
-      <span class="brand-tag">Curated by Eris's circle</span>
+    <a href="/" class="brand" aria-label="Trove Collections — home">
+      <img
+        src="/images/brand/trove-logo.png"
+        alt="Trove Collections — curated by Eris's circle"
+        class="brand-logo"
+        width="150"
+        height="150"
+      />
     </a>
     <nav>
       {regions.map(r => (
@@ -37,28 +42,22 @@ const regions = [
     padding: 1.5rem 1.5rem 1rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
   }
   .brand {
     border: 0;
-    color: var(--ink);
-    display: flex;
-    flex-direction: column;
+    display: block;
   }
-  .brand-name {
-    font-family: ui-serif, Georgia, serif;
-    font-size: 1.5rem;
-    font-weight: 500;
-    letter-spacing: -0.01em;
-  }
-  .brand-tag {
-    font-size: 0.85rem;
-    color: var(--muted);
-    font-style: italic;
+  .brand-logo {
+    width: 132px;
+    height: auto;
+    display: block;
   }
   nav {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 1.25rem;
     font-size: 0.95rem;
   }
@@ -74,14 +73,5 @@ const regions = [
   }
   nav a.muted-link {
     color: var(--muted);
-    margin-left: auto;
-  }
-  @media (min-width: 720px) {
-    .header-inner {
-      flex-direction: row;
-      align-items: baseline;
-      justify-content: space-between;
-      padding: 1.5rem;
-    }
   }
 </style>
