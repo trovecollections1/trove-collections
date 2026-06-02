@@ -6,7 +6,7 @@ subcategoryOrder: 3
 itemOrder: 6
 country: "USA"
 curator: "Mic"
-photo: /images/items/na-michael-kors-patent-leather-heel.png
+photo: /images/items/na-michael-kors-patent-leather-heel.png?v=2
 pendingPhoto: false
 ---
 
