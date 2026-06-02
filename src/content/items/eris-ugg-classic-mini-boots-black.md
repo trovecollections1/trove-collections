@@ -5,7 +5,9 @@ subcategory: "CLOTHING & SHOES"
 subcategoryOrder: 3
 itemOrder: 16
 curator: "Micki"
-pendingPhoto: true
+photo: /images/items/eris-ugg-classic-mini-boots-black.png
+pendingPhoto: false
 ---
+
 
 The campus uniform shoe. UGG Mini in black is the most versatile version — pairs with leggings, skirts, jeans, whatever. The shoe I keep by the door for the mornings I'm running late and still need to look intentional.
