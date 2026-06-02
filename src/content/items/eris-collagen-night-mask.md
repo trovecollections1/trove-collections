@@ -5,7 +5,7 @@ subcategory: "BEAUTY"
 subcategoryOrder: 1
 itemOrder: 2.6
 curator: "Eris"
-photo: /images/items/eris-collagen-night-mask.png
+photo: /images/items/eris-medicube-collagen-mask.png
 pendingPhoto: false
 ---
 
