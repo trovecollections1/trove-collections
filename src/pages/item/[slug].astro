@@ -14,7 +14,12 @@ const { item } = Astro.props;
 const { Content } = await item.render();
 ---
 
-<Layout title={`${item.data.name} — Trove Collections`} description={item.body.slice(0, 160)}>
+<Layout
+  title={`${item.data.name} — Trove Collections`}
+  description={item.body.slice(0, 160).trim()}
+  image={item.data.photo && !item.data.pendingPhoto ? item.data.photo : undefined}
+  ogType="article"
+>
   <article class="item">
     <p class="muted breadcrumb">
       <a href="/collections">Collections</a>

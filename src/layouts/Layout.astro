@@ -10,13 +10,22 @@ export interface Props {
    * the disclosure page itself) should pass false.
    */
   topDisclosure?: boolean;
+  /** Path or URL to the social-share / Pinterest Rich Pin image. Resolved to absolute against the site. */
+  image?: string;
+  /** Open Graph type — "website" for general pages, "article" for item/story pages. */
+  ogType?: string;
 }
 
 const {
   title,
   description = "Curated travel-inspired finds personally used by Eris's circle of pilot curators. Real picks, no algorithm.",
   topDisclosure = true,
+  image,
+  ogType = "website",
 } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const ogImage = new URL(image ?? "/images/brand/trove-logo.png", Astro.site).href;
 
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -34,6 +43,18 @@ import DisclosureBanner from '../components/DisclosureBanner.astro';
     <meta name="generator" content={Astro.generator} />
     <meta name="fo-verify" content="67a58a85-4878-4688-bd1e-ecc7551fdd91" />
     <meta name="impact-site-verification" value="39ecdaf7-a6a1-4178-bdf4-787d534ba88c" />
+    <link rel="canonical" href={canonicalURL} />
+    <!-- Open Graph / Pinterest Rich Pins -->
+    <meta property="og:type" content={ogType} />
+    <meta property="og:site_name" content="Trove Collections" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
     <title>{title}</title>
   </head>
   <body>
