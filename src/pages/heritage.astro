@@ -113,6 +113,23 @@ import Layout from '../layouts/Layout.astro';
       family.
     </p>
 
+    <h3>The published legend</h3>
+
+    <p>
+      You don't have to take our word for any of this. In 1986 — fourteen years
+      after Grandpa Jim retired — Maj. Gen. Dale O. Smith (Ret.) published a
+      memoir about him in <em>Air Force Magazine</em> that opens: "There are
+      major legends and minor legends, and then there was Philpott." It has
+      stories we didn't put on this page: a young Flying Cadet who "fell" out of
+      a B-10's open bomb bay mid-practice-run and parachuted down still holding
+      his clipboard, and another general who, asked about him decades later,
+      knew him only as the one who flew through a hangar in Denver. The General
+      admits the memoir might be a little distorted — his words, and fair
+      enough. Legends usually are. Read it in the magazine's archive:
+      <a href="https://www.airandspaceforces.com/article/1086philpott/" rel="noopener">
+      <em>Philpott Has the Last Word</em>, October 1986 →</a>
+    </p>
+
     <figure>
       <img src="/images/heritage/p40-beverly.jpg" alt="The P-40 fighter named Beverly" />
       <figcaption>The P-40 fighter Grandpa Jim named <em>Beverly</em> after his wife.</figcaption>
@@ -357,7 +374,23 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <style>
-  .heritage { max-width: 720px; margin: 0 auto; }
+  .heritage { max-width: 1080px; margin: 0 auto; }
+  /* Magazine layout on wide screens: prose keeps a readable measure on the
+     left; figures float into a right-hand photo rail beside the text. */
+  @media (min-width: 980px) {
+    .heritage figure {
+      float: right;
+      clear: right;
+      width: 40%;
+      margin: 0.25rem 0 1.5rem 2.5rem;
+    }
+    .heritage h2,
+    .heritage hr,
+    .heritage .quote,
+    .heritage .quote-big {
+      clear: both;
+    }
+  }
   .breadcrumb { margin-bottom: 1rem; font-size: 0.9rem; }
   .breadcrumb a { color: var(--muted); border: 0; }
   .breadcrumb a:hover { color: var(--ink); }
