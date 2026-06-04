@@ -9,10 +9,16 @@ import Layout from '../../layouts/Layout.astro';
     <h1>The polenta pan they sold me</h1>
     <p class="byline muted">by Auntie Kristen &middot; <em>Argentina</em></p>
 
-    <p class="lede">
-      <em>Photo placeholder: the cast-iron polenta pan, possibly on a stove or
-      with food in it.</em>
-    </p>
+    <figure class="story-image">
+      <img
+        src="/images/items/Argentina-disco-de-arado-cast-iron-polenta-pan.jpg"
+        alt="The cast-iron polenta pan from Argentina — decades of seasoning, two small handles, and a story."
+        width="1600"
+        height="1600"
+        loading="eager"
+      />
+      <figcaption class="muted">The pan itself. Decades of polenta in the seasoning.</figcaption>
+    </figure>
 
     <p>
       I had a layover in Argentina and went looking for the kind of restaurant
@@ -67,6 +73,13 @@ import Layout from '../../layouts/Layout.astro';
     margin-bottom: 1.5rem;
   }
   .lede { font-size: 1.1rem; margin-bottom: 1.5rem; }
+  .story-image { margin: 2rem 0; max-width: 480px; }
+  .story-image img { width: 100%; height: auto; border-radius: 4px; }
+  .story-image figcaption {
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
   p { max-width: 65ch; font-size: 1.05rem; line-height: 1.65; }
   hr {
     border: 0;
