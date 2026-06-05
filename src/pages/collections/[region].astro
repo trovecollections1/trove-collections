@@ -14,7 +14,8 @@ export async function getStaticPaths() {
     { slug: 'levant', regionName: 'Levant', title: 'Levant',
       intro: "In this collection, the memory leads and the object follows. Old Jerusalem tapestry from a Christmas week my parents spent there together. Istanbul finds from trips we keep going back on. We picked these things up in the moment — and they've been holding those moments ever since." },
     { slug: 'north-america', regionName: 'North America', title: 'North America',
-      intro: "This collection is anchored by one question: after thirty years of flying, what survived while everything else got replaced? My mom wears Beverly's pearls every day — the double strand passed down from the same Beverly whose name was painted on a P-40. Underneath them, the working wardrobe she's refined over decades: Talbots and Ann Taylor, Brooks Brothers blouses, Lancôme that lasts a 15-hour flight, and Cozy Earth for the ride home. Less a regional collection, more the toolkit of a life spent traveling." },
+      intro: "This collection is anchored by one question: after thirty years of flying, what survived while everything else got replaced? My mom wears Beverly's pearls every day — the double strand passed down from the same Beverly whose name was painted on a P-40. Underneath them, the working wardrobe she's refined over decades: Talbots and Ann Taylor, Brooks Brothers blouses, Lancôme that lasts a 15-hour flight, and Cozy Earth for the ride home. Less a regional collection, more the toolkit of a life spent traveling.",
+      crossLink: { href: '/ladies-business-attire', label: 'The whole working wardrobe, gathered in one place: Ladies Business Attire →' } },
     { slug: 'oceania', regionName: 'Oceania', title: 'Oceania',
       intro: "Small on purpose. A hand-painted boomerang, sourced ethically through an Indigenous Art Code certified retailer. The Felan sweater and leather wallet Auntie Kristen wore home from Sydney. We don't pad collections to make them look full — only things worth remembering earn a place here." },
     { slug: 'travel-gear', regionName: 'Travel Gear', title: 'Travel Gear',
@@ -50,7 +51,7 @@ export async function getStaticPaths() {
   });
 }
 
-const { regionName, title, intro, items, sortedGroups } = Astro.props;
+const { regionName, title, intro, items, sortedGroups, crossLink } = Astro.props;
 ---
 
 <Layout title={`${title} — Trove Collections`}>
@@ -58,6 +59,9 @@ const { regionName, title, intro, items, sortedGroups } = Astro.props;
     <p class="muted breadcrumb"><a href="/collections">All Collections</a></p>
     <h1>{title}</h1>
     <p class="intro">{intro}</p>
+    {crossLink && (
+      <p class="cross-link"><a href={crossLink.href}>{crossLink.label}</a></p>
+    )}
   </header>
 
   {items.length === 0 ? (
@@ -97,6 +101,10 @@ const { regionName, title, intro, items, sortedGroups } = Astro.props;
     max-width: 60ch;
     font-size: 1.05rem;
     margin-top: 0.75rem;
+  }
+  .cross-link {
+    margin-top: 0.75rem;
+    font-size: 1rem;
   }
   .subcategories {
     display: flex;

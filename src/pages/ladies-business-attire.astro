@@ -1,0 +1,134 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import ProductCard from '../components/ProductCard.astro';
+
+const all = await getCollection('items');
+const items = all
+  .filter(i => i.data.subcategory === 'LADIES BUSINESS ATTIRE')
+  .sort((a, b) => (a.data.itemOrder ?? 0) - (b.data.itemOrder ?? 0));
+
+// Group by itemOrder ranges into shopping-logical sections
+const buckets = [
+  { title: 'Shoes', test: (o: number) => o >= 1 && o <= 8 },
+  { title: 'Shirts, Sweaters & the Blazer', test: (o: number) => o >= 9 && o <= 12 },
+  { title: 'Pants', test: (o: number) => o >= 13 && o <= 23 },
+  { title: 'The Finishing Pieces', test: (o: number) => o >= 24 && o <= 26 },
+  { title: 'Jewelry', test: (o: number) => o >= 27 && o <= 31 },
+];
+const grouped = buckets
+  .map(b => ({ title: b.title, list: items.filter(i => b.test(i.data.itemOrder ?? 0)) }))
+  .filter(g => g.list.length > 0);
+const leftovers = items.filter(i => !buckets.some(b => b.test(i.data.itemOrder ?? 0)));
+---
+
+<Layout
+  title="Ladies Business Attire — curated by airline captains | Trove Collections"
+  description="Ladies business attire in one place: the work shirts, pants, shoes, and jewelry three airline captains have refined over thirty years of flying — every piece personally worn and repurchased."
+>
+  <header class="collection-header">
+    <p class="muted breadcrumb"><a href="/collections/north-america">← North America Collection</a></p>
+    <h1>Ladies Business Attire</h1>
+    <p class="intro">
+      There used to be a store that solved this. It was called Petite
+      Sophisticate, my mom still talks about it, and it's been gone for years.
+      Since then she's done what every working woman has done: typed
+      &ldquo;ladies business attire&rdquo; into a search bar and gotten back a
+      bath of everything except an answer.
+    </p>
+    <p class="intro">
+      So here's the answer, in one spot: the working wardrobe my mom and my
+      aunts have refined over thirty years of flying for a living. The shirts
+      that survive a fifteen-hour duty day. The pants that hold a crease from
+      preflight to layover dinner. The shoes that can walk a mile of terminal.
+      The earrings that go from flight deck to dinner table. Every piece
+      personally worn, repurchased, and argued over by three airline captains.
+      This page is what we wish that search result had been. &mdash; Eris
+    </p>
+  </header>
+
+  <div class="subcategories">
+    {grouped.map(group => (
+      <section class="subcategory">
+        <h2 class="subcat-header">{group.title}</h2>
+        <div class="grid">
+          {group.list.map((item) => (
+            <ProductCard
+              name={item.data.name}
+              curator={item.data.curator}
+              blurb={item.body.slice(0, 220).trim() + (item.body.length > 220 ? '…' : '')}
+              photo={item.data.photo}
+              additionalPhotos={item.data.additionalPhotos}
+              affiliateUrl={item.data.affiliateUrl}
+              pendingPhoto={item.data.pendingPhoto}
+              slug={item.slug}
+            />
+          ))}
+        </div>
+      </section>
+    ))}
+    {leftovers.length > 0 && (
+      <section class="subcategory">
+        <h2 class="subcat-header">More</h2>
+        <div class="grid">
+          {leftovers.map((item) => (
+            <ProductCard
+              name={item.data.name}
+              curator={item.data.curator}
+              blurb={item.body.slice(0, 220).trim() + (item.body.length > 220 ? '…' : '')}
+              photo={item.data.photo}
+              additionalPhotos={item.data.additionalPhotos}
+              affiliateUrl={item.data.affiliateUrl}
+              pendingPhoto={item.data.pendingPhoto}
+              slug={item.slug}
+            />
+          ))}
+        </div>
+      </section>
+    )}
+  </div>
+
+  <hr />
+
+  <p class="muted" style="text-align: center;">
+    The pearls underneath it all have their own story:
+    <a href="/stories/beverlys-pearls">Beverly's pearls →</a>
+    <br /><br />
+    <a href="/collections/north-america">See the full North America Collection →</a>
+  </p>
+</Layout>
+
+<style>
+  .collection-header {
+    margin-bottom: 2rem;
+  }
+  .breadcrumb { margin-bottom: 0.5rem; font-size: 0.9rem; }
+  .breadcrumb a { color: var(--muted); border: 0; }
+  .intro {
+    max-width: 62ch;
+    font-size: 1.05rem;
+    margin-top: 0.75rem;
+  }
+  .subcategories {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .subcat-header {
+    font-size: 1.15rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 1rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.5rem;
+  }
+  hr {
+    border: 0;
+    border-top: 1px solid var(--rule);
+    margin: 3rem 0 2rem;
+  }
+</style>
