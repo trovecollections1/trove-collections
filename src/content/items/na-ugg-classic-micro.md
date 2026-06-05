@@ -8,6 +8,7 @@ country: "USA"
 curator: "Mic"
 photo: /images/items/na-ugg-classic-micro.png
 pendingPhoto: false
+affiliateUrl: "https://www.amazon.com/dp/B0DPRW7WX9?tag=trovecollec0d-20"
 ---
 
 UGG's shortest Classic height — barely a boot. Sheepskin warmth in a sneaker-low silhouette. For travel and the in-between-weather days. — Eris

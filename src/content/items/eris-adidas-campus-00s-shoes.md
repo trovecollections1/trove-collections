@@ -7,6 +7,7 @@ itemOrder: 9
 curator: "Eris"
 photo: /images/items/eris-adidas-campus-00s.png
 pendingPhoto: false
+affiliateUrl: "https://www.amazon.com/dp/B0DJ6S6FRX?tag=trovecollec0d-20"
 ---
 
 

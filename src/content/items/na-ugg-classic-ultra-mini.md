@@ -8,6 +8,7 @@ country: "USA"
 curator: "Mic"
 photo: /images/items/na-ugg-classic-ultra-mini.png
 pendingPhoto: false
+affiliateUrl: "https://www.amazon.com/dp/B082HJ426Q?tag=trovecollec0d-20"
 ---
 
 Shorter than the Mini, the Ultra Mini sits right at the ankle. Same UGG sheepskin construction, lower-profile silhouette for the days a fuller boot is too much shoe. — Eris

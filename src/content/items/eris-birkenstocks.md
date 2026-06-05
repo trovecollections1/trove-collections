@@ -7,6 +7,7 @@ itemOrder: 19
 curator: "Micki"
 photo: /images/items/eris-birkenstocks.png
 pendingPhoto: false
+affiliateUrl: "https://www.amazon.com/dp/B07N13RFC1?tag=trovecollec0d-20"
 ---
 
 

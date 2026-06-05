@@ -1,5 +1,5 @@
 ---
-name: "UGG slippers (2025 — additional pair)"
+name: "UGG slippers — dark blue"
 region: "Eris's Picks"
 subcategory: "CLOTHING & SHOES"
 subcategoryOrder: 3
@@ -8,4 +8,4 @@ curator: "Eris"
 pendingPhoto: true
 ---
 
-Round two of UGGs in the dorm. A second pair of slippers — different style from the Cozy, same purpose: the slip-on that lives by my bed. Cozy mathematics — having two is somehow more comfortable than one.
+Round two of UGGs in the dorm — this pair in dark blue, a different style from the Cozy but the same purpose: the slip-on that lives by my bed. Cozy mathematics — having two is somehow more comfortable than one.

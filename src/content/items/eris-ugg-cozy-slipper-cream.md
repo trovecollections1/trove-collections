@@ -7,6 +7,7 @@ itemOrder: 15
 curator: "Micki"
 photo: /images/items/eris-ugg-cozy-slipper-cream.png
 pendingPhoto: false
+affiliateUrl: "https://www.amazon.com/dp/B08448GR8D?tag=trovecollec0d-20"
 ---
 
 
