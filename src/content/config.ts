@@ -12,6 +12,7 @@ const items = defineCollection({
       'North America',
       'Oceania',
       'Travel Gear',
+      'Crew Gear',
       "Eris's Picks",
     ]),
     subcategory: z.string().optional(),
