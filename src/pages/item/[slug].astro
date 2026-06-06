@@ -54,15 +54,17 @@ const { Content } = await item.render();
     </div>
 
     {item.data.affiliateUrl && (
-      <a href={item.data.affiliateUrl} class="shop-button" rel="sponsored noopener" target="_blank">
-        Shop this &rarr;
-      </a>
-    )}
+      <>
+        <a href={item.data.affiliateUrl} class="shop-button" rel="sponsored noopener" target="_blank">
+          Shop this &rarr;
+        </a>
 
-    <p class="muted small disclosure-note">
-      Trove Collections may earn a small commission from purchases made through
-      this link. <a href="/disclosure">How affiliate links work here.</a>
-    </p>
+        <p class="muted small disclosure-note">
+          Trove Collections may earn a small commission from purchases made through
+          this link. <a href="/disclosure">How affiliate links work here.</a>
+        </p>
+      </>
+    )}
   </article>
 </Layout>
 
