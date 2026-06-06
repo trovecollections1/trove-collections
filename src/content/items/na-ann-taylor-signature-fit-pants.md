@@ -6,8 +6,11 @@ subcategoryOrder: 3
 itemOrder: 18
 country: "USA"
 curator: "Mic"
-photo: /images/items/na-ann-taylor-signature-fit-pants.png
+photo: /images/items/na-ann-taylor-signature-fit-pants.png?v=2
 pendingPhoto: false
+additionalPhotos:
+  - /images/items/na-ann-taylor-signature-charcoal.png
+  - /images/items/na-ann-taylor-signature-dark-brown.png
 ---
 
-Ann Taylor's Signature Fit is the parallel workhorse cut to Talbots Heritage. Mic keeps it in grey, brown, and brown herringbone for variety in the rotation. — Eris
+Ann Taylor's Signature Fit is the parallel workhorse cut to Talbots Heritage. Mic keeps it in brown, charcoal grey, and dark brown for variety in the rotation. — Eris

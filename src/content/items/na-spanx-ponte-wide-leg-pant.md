@@ -6,7 +6,7 @@ subcategoryOrder: 3
 itemOrder: 21
 country: "USA"
 curator: "Mic"
-photo: /images/items/na-spanx-ponte-wide-leg-pant.png
+photo: /images/items/na-spanx-ponte-wide-leg-pant.png?v=2
 pendingPhoto: false
 ---
 

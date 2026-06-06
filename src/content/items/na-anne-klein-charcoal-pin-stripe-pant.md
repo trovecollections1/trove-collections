@@ -6,7 +6,7 @@ subcategoryOrder: 3
 itemOrder: 22
 country: "USA"
 curator: "Mic"
-photo: /images/items/na-anne-klein-charcoal-pin-stripe-pant.png
+photo: /images/items/na-anne-klein-charcoal-pin-stripe-pant.png?v=2
 pendingPhoto: false
 ---
 

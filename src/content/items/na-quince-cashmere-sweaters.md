@@ -6,7 +6,7 @@ subcategoryOrder: 3
 itemOrder: 11
 country: "USA"
 curator: "Mic"
-photo: /images/items/na-quince-cashmere-sweaters.png
+photo: /images/items/na-quince-cashmere-sweaters.png?v=2
 pendingPhoto: false
 ---
 

@@ -6,7 +6,7 @@ subcategoryOrder: 3
 itemOrder: 15
 country: "USA"
 curator: "Mic"
-photo: /images/items/na-talbots-modern-pants.png
+photo: /images/items/na-talbots-modern-pants.png?v=2
 pendingPhoto: false
 ---
 

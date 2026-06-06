@@ -6,7 +6,7 @@ subcategoryOrder: 3
 itemOrder: 13
 country: "USA"
 curator: "Mic"
-photo: /images/items/na-talbots-heritage-straight-leg-pants.png?v=2
+photo: /images/items/na-talbots-heritage-straight-leg-pants.png?v=3
 pendingPhoto: false
 ---
 

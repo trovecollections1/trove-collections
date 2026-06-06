@@ -6,8 +6,8 @@ subcategoryOrder: 3
 itemOrder: 17
 country: "USA"
 curator: "Mic"
-photo: /images/items/na-talbots-summer-pant-lightweight.png?v=2
+photo: /images/items/na-talbots-summer-pant-lightweight.png?v=3
 pendingPhoto: false
 ---
 
-Talbots' lightweight summer-fabric pant — the breathable version of the Heritage cut for hot months. — Eris
+Talbots' lightweight linen pant — the breathable, warm-weather version of the Heritage cut for hot months and long summer layovers. — Eris
