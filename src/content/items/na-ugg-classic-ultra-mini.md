@@ -6,7 +6,7 @@ subcategoryOrder: 2
 itemOrder: 2
 country: "USA"
 curator: "Mic"
-photo: /images/items/na-ugg-classic-ultra-mini.png
+photo: /images/items/na-ugg-classic-ultra-mini.png?v=2
 pendingPhoto: false
 affiliateUrl: "https://www.amazon.com/dp/B082HJ426Q?tag=trovecollec0d-20"
 ---
