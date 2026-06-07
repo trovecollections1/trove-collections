@@ -6,7 +6,7 @@ subcategoryOrder: 2
 itemOrder: 4
 country: "USA"
 curator: "Mic"
-photo: /images/items/na-ugg-slippers.png
+photo: /images/items/na-ugg-slippers.png?v=2
 pendingPhoto: false
 affiliateUrl: "https://www.amazon.com/dp/B0DPJJNHDW?tag=trovecollec0d-20"
 ---
