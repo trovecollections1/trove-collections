@@ -6,7 +6,7 @@ subcategoryOrder: 3
 itemOrder: 18
 country: "USA"
 curator: "Mic"
-photo: /images/items/na-ann-taylor-signature-fit-pants.png?v=2
+photo: /images/items/na-ann-taylor-signature-fit-pants.png?v=3
 pendingPhoto: false
 additionalPhotos:
   - /images/items/na-ann-taylor-signature-charcoal.png

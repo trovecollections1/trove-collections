@@ -6,7 +6,7 @@ subcategoryOrder: 3
 itemOrder: 11.6
 country: "USA"
 curator: "Mic"
-photo: /images/items/na-magaschoni-cashmere.png
+photo: /images/items/na-magaschoni-cashmere.png?v=2
 pendingPhoto: false
 ---
 

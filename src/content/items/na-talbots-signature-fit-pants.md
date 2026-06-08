@@ -6,11 +6,11 @@ subcategoryOrder: 3
 itemOrder: 14
 country: "USA"
 curator: "Mic"
-photo: /images/items/na-talbots-signature-fit-pants.png?v=3
+photo: /images/items/na-talbots-signature-fit-pants.png?v=4
 pendingPhoto: false
 additionalPhotos:
-  - /images/items/na-talbots-signature-tan.png
-  - /images/items/na-talbots-signature-olive.png
+  - /images/items/na-talbots-signature-tan.png?v=2
+  - /images/items/na-talbots-signature-olive.png?v=2
   - /images/items/na-talbots-signature-dark-brown.png
 ---
 

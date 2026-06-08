@@ -9,7 +9,7 @@ curator: "Mic"
 photo: /images/items/na-tahari-sweaters.png?v=2
 pendingPhoto: false
 additionalPhotos:
-  - /images/items/na-tahari-sweater-oatmeal.png
+  - /images/items/na-tahari-sweater-oatmeal.png?v=2
   - /images/items/na-tahari-sweater-white-black.png
   - /images/items/na-tahari-sweater-black-white.png
 ---
