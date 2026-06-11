@@ -6,7 +6,7 @@ subcategoryOrder: 1
 itemOrder: 3
 country: "USA"
 curator: "Mic"
-photo: /images/items/na-cozy-earth-first-layer-pajama-pink.png
+photo: /images/items/na-cozy-earth-soft-pink-pajamas.jpg
 pendingPhoto: false
 ---
 

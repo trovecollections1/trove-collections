@@ -6,7 +6,7 @@ subcategoryOrder: 1
 itemOrder: 2
 country: "USA"
 curator: "Mic"
-photo: /images/items/na-cozy-earth-lounge-set-original.png
+photo: /images/items/na-cozy-earth-soft-grey-loungewear.jpg
 pendingPhoto: false
 ---
 

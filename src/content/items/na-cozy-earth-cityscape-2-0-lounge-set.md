@@ -6,7 +6,7 @@ subcategoryOrder: 1
 itemOrder: 1
 country: "USA"
 curator: "Mic"
-photo: /images/items/na-cozy-earth-cityscape-2-0-lounge-set.png
+photo: /images/items/na-cozy-earth-cityscape-sweatsuit.jpg
 pendingPhoto: false
 ---
 
