@@ -10,6 +10,19 @@ import Layout from '../layouts/Layout.astro';
     friend leaning across a table and saying, "You need to try this."
   </p>
 
+  <div class="explore-links">
+    <a class="explore-card" href="/heritage">
+      <span class="explore-kicker">The family story</span>
+      <span class="explore-title">Heritage →</span>
+      <span class="explore-sub">Almost a hundred years of flying, from Grandpa Jim's 1928 solo onward</span>
+    </a>
+    <a class="explore-card" href="/hangar">
+      <span class="explore-kicker">The airplanes</span>
+      <span class="explore-title">The Hangar →</span>
+      <span class="explore-sub">The aircraft the family has flown, fixed, and kept in the family</span>
+    </a>
+  </div>
+
   <div class="two-col">
     <p>
       Trove Collections grew out of those conversations. Over time, our family and
@@ -146,6 +159,54 @@ import Layout from '../layouts/Layout.astro';
   .lede {
     font-size: 1.1rem;
     max-width: 60ch;
+  }
+
+  /* Top gateway cards to Heritage + Hangar */
+  .explore-links {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 1.75rem 0 2.25rem;
+  }
+  @media (min-width: 700px) {
+    .explore-links {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .explore-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 1.25rem 1.5rem;
+    border: 1.5px solid var(--accent);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.45);
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.15s ease, transform 0.15s ease;
+  }
+  .explore-card:hover {
+    background: var(--accent);
+    transform: translateY(-2px);
+  }
+  .explore-card:hover .explore-kicker,
+  .explore-card:hover .explore-title,
+  .explore-card:hover .explore-sub {
+    color: #fff;
+  }
+  .explore-kicker {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+  }
+  .explore-title {
+    font-size: 1.35rem;
+    font-weight: 600;
+  }
+  .explore-sub {
+    font-size: 0.92rem;
+    opacity: 0.85;
   }
   p { max-width: 65ch; }
 
