@@ -2,7 +2,7 @@
 name: "Erborian CC Red Correct (à la Centella Asiatica, SPF 25)"
 region: "East Asia"
 subcategory: "SUNSCREEN, PRIMER & COLOR CARE"
-subcategoryOrder: 100
+subcategoryOrder: 16
 itemOrder: 10
 country: "South Korea"
 curator: "Micki"

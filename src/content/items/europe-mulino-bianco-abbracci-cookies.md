@@ -3,7 +3,7 @@ name: "Mulino Bianco Abbracci cookies"
 region: "Europe"
 subcategory: "ITALY — LAKE COMO (Tanya's haul)"
 subcategoryOrder: 2
-itemOrder: 9
+itemOrder: 5.5
 country: "Italy"
 curator: "Tanya"
 photo: /images/items/Italy-Lake-Como-Mulino-Bianco-Abbracci-cookies.jpg

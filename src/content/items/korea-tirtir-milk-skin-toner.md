@@ -2,7 +2,7 @@
 name: "TirTir Milk Skin Toner"
 region: "East Asia"
 subcategory: "SERUMS & ESSENCES"
-subcategoryOrder: 80
+subcategoryOrder: 13
 itemOrder: 5
 country: "South Korea"
 curator: "Micki"

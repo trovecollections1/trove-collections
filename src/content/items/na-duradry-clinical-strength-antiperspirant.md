@@ -2,7 +2,7 @@
 name: "Duradry — clinical-strength antiperspirant"
 region: "North America"
 subcategory: "MIC'S DAILY ESSENTIALS + TRAVEL FINDS"
-subcategoryOrder: 7
+subcategoryOrder: 1.4
 itemOrder: 2
 country: "USA"
 curator: "Mic"

@@ -2,7 +2,7 @@
 name: "TirTir SOS Serum (Refreshing Skin / Anti-Wrinkle)"
 region: "East Asia"
 subcategory: "SERUMS & ESSENCES"
-subcategoryOrder: 80
+subcategoryOrder: 13
 itemOrder: 4
 country: "South Korea"
 curator: "Micki"

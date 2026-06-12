@@ -2,8 +2,8 @@
 name: "UGG Classic Mini sheepskin boot"
 region: "North America"
 subcategory: "MIC'S UGG ROTATION"
-subcategoryOrder: 2
-itemOrder: 1
+subcategoryOrder: 0.6
+itemOrder: 5
 country: "USA"
 curator: "Mic"
 photo: /images/items/na-ugg-classic-mini.png

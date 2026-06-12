@@ -3,7 +3,7 @@ name: "Royce' Chocolate (Hokkaido) — Nama Chocolate + Chocolate-covered Potato
 region: "East Asia"
 subcategory: "SNACKS & PANTRY"
 subcategoryOrder: 50
-itemOrder: 13
+itemOrder: 0.2
 country: "Japan"
 city: "Tokyo"
 curator: "Micki"

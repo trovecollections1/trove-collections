@@ -2,7 +2,7 @@
 name: "UGG slippers"
 region: "North America"
 subcategory: "MIC'S UGG ROTATION"
-subcategoryOrder: 2
+subcategoryOrder: 0.6
 itemOrder: 4
 country: "USA"
 curator: "Mic"

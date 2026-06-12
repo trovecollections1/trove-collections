@@ -2,7 +2,7 @@
 name: "Scriveiner black lacquer & gold fountain pen (engraved)"
 region: "Europe"
 subcategory: "UNITED KINGDOM (rolled into Europe for now — single item)"
-subcategoryOrder: 5
+subcategoryOrder: 1.5
 itemOrder: 12
 country: "United Kingdom"
 curator: "Cheryl Lynne"

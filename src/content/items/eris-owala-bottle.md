@@ -2,7 +2,7 @@
 name: "Owala water bottle — Shy Marshmallow"
 region: "Eris's Picks"
 subcategory: "OTHER / TECH & LIFESTYLE"
-subcategoryOrder: 4
+subcategoryOrder: 1.5
 itemOrder: 25
 curator: "Eris"
 photo: /images/items/eris-owala-bottle.png

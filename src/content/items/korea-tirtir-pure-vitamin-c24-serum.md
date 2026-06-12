@@ -2,7 +2,7 @@
 name: "TirTir Pure Vitamin C24 Serum"
 region: "East Asia"
 subcategory: "SERUMS & ESSENCES"
-subcategoryOrder: 80
+subcategoryOrder: 13
 itemOrder: 6
 country: "South Korea"
 curator: "Micki"

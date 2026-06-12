@@ -2,7 +2,7 @@
 name: "Beauty of Joseon Dynasty Cream"
 region: "East Asia"
 subcategory: "CREAMS & MOISTURIZERS"
-subcategoryOrder: 90
+subcategoryOrder: 15
 itemOrder: 7
 country: "South Korea"
 curator: "Micki"

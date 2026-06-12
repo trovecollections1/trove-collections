@@ -2,7 +2,7 @@
 name: "Apple AirPods Max"
 region: "Eris's Picks"
 subcategory: "OTHER / TECH & LIFESTYLE"
-subcategoryOrder: 4
+subcategoryOrder: 1.5
 itemOrder: 24
 curator: "Eris"
 photo: /images/items/eris-airpods-max.png

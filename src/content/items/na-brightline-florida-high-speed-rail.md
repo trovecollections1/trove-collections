@@ -2,7 +2,7 @@
 name: "Brightline — Florida high-speed rail"
 region: "North America"
 subcategory: "MIC'S DAILY ESSENTIALS + TRAVEL FINDS"
-subcategoryOrder: 7
+subcategoryOrder: 1.4
 itemOrder: 3
 country: "USA"
 curator: "Mic"

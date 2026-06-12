@@ -2,7 +2,7 @@
 name: "TirTir Hydro Boost Enzyme Cleansing Balm"
 region: "East Asia"
 subcategory: "CLEANSERS & EXFOLIANTS"
-subcategoryOrder: 70
+subcategoryOrder: 12
 itemOrder: 1
 country: "South Korea"
 curator: "Micki"

@@ -2,7 +2,7 @@
 name: "UGG Classic Micro sheepskin boot"
 region: "North America"
 subcategory: "MIC'S UGG ROTATION"
-subcategoryOrder: 2
+subcategoryOrder: 0.6
 itemOrder: 3
 country: "USA"
 curator: "Mic"

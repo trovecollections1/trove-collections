@@ -3,7 +3,7 @@ name: "Mizkan Yuzu Ponzu"
 region: "East Asia"
 subcategory: "SNACKS & PANTRY"
 subcategoryOrder: 50
-itemOrder: 11
+itemOrder: 0.1
 country: "Japan"
 city: "Tokyo"
 curator: "Micki"

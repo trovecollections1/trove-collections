@@ -3,7 +3,7 @@ name: "Burberry Goddess Eau de Parfum"
 region: "Eris's Picks"
 subcategory: "BEAUTY"
 subcategoryOrder: 1
-itemOrder: 1
+itemOrder: 3.5
 curator: "Eris"
 photo: /images/items/eris-burberry-goddess.png
 pendingPhoto: false

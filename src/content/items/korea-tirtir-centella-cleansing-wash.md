@@ -2,7 +2,7 @@
 name: "TirTir Centella Cleansing Wash"
 region: "East Asia"
 subcategory: "CLEANSERS & EXFOLIANTS"
-subcategoryOrder: 70
+subcategoryOrder: 12
 itemOrder: 3
 country: "South Korea"
 curator: "Micki"

@@ -2,7 +2,7 @@
 name: "Erborian Pink Primer & Care (au Diospyros Kaki)"
 region: "East Asia"
 subcategory: "SUNSCREEN, PRIMER & COLOR CARE"
-subcategoryOrder: 100
+subcategoryOrder: 16
 itemOrder: 9
 country: "South Korea"
 curator: "Micki"

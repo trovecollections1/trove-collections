@@ -2,7 +2,7 @@
 name: "TirTir Vitachiol Aging Gel Mask"
 region: "East Asia"
 subcategory: "TREATMENTS & TOOLS"
-subcategoryOrder: 120
+subcategoryOrder: 18
 itemOrder: 15
 country: "South Korea"
 curator: "Micki"

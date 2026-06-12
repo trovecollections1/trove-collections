@@ -2,7 +2,7 @@
 name: "Boll & Branch ribbed knit throw — oatmeal"
 region: "North America"
 subcategory: "MIC'S BOLL & BRANCH BLANKETS"
-subcategoryOrder: 1.5
+subcategoryOrder: 0.5
 itemOrder: 2
 country: "USA"
 curator: "Mic"

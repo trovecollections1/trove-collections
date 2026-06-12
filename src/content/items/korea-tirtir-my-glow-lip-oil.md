@@ -2,7 +2,7 @@
 name: "TirTir My Glow Lip Oil"
 region: "East Asia"
 subcategory: "LIP CARE"
-subcategoryOrder: 110
+subcategoryOrder: 17
 itemOrder: 1
 country: "South Korea"
 curator: "Micki"

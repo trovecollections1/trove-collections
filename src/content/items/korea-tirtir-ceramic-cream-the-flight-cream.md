@@ -2,7 +2,7 @@
 name: "TirTir Ceramic Cream — the flight cream"
 region: "East Asia"
 subcategory: "CREAMS & MOISTURIZERS"
-subcategoryOrder: 90
+subcategoryOrder: 15
 itemOrder: 8
 country: "South Korea"
 curator: "Micki"

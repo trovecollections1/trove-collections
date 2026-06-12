@@ -2,7 +2,7 @@
 name: "Octo Buddy"
 region: "Eris's Picks"
 subcategory: "OTHER / TECH & LIFESTYLE"
-subcategoryOrder: 4
+subcategoryOrder: 1.5
 itemOrder: 26
 curator: "Eris"
 photo: /images/items/eris-octo-buddy.png

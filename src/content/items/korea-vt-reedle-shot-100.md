@@ -2,7 +2,7 @@
 name: "VT Reedle Shot — the K-beauty 'needling' serum (100 / 300 / 700 / 900 strength ladder)"
 region: "East Asia"
 subcategory: "TREATMENTS & TOOLS"
-subcategoryOrder: 120
+subcategoryOrder: 18
 itemOrder: 13
 country: "South Korea"
 curator: "Micki"

@@ -2,7 +2,7 @@
 name: "Luggage Works Stealth Premier 22\""
 region: "Travel Gear"
 subcategory: "FLIGHT BAGS"
-subcategoryOrder: 2
+subcategoryOrder: 3
 itemOrder: 4
 curator: "Mic"
 pendingPhoto: true

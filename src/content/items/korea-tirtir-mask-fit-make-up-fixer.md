@@ -2,7 +2,7 @@
 name: "TirTir Mask Fit Make Up Fixer"
 region: "East Asia"
 subcategory: "SUNSCREEN, PRIMER & COLOR CARE"
-subcategoryOrder: 100
+subcategoryOrder: 16
 itemOrder: 11
 country: "South Korea"
 curator: "Micki"

@@ -2,7 +2,7 @@
 name: "Tony Moly Intense Care Gold 24K Snail Hydro Gel Mask"
 region: "East Asia"
 subcategory: "TREATMENTS & TOOLS"
-subcategoryOrder: 120
+subcategoryOrder: 18
 itemOrder: 16
 country: "South Korea"
 curator: "Micki"

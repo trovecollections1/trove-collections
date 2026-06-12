@@ -2,7 +2,7 @@
 name: "Tumi Voyageur Contine Weekender"
 region: "Travel Gear"
 subcategory: "WEEKENDERS"
-subcategoryOrder: 3
+subcategoryOrder: 1.5
 itemOrder: 5
 curator: "Mic"
 pendingPhoto: true

@@ -2,7 +2,7 @@
 name: "Beauty of Joseon Revive Eye Serum (Ginseng + Retinal)"
 region: "East Asia"
 subcategory: "EYE CARE"
-subcategoryOrder: 85
+subcategoryOrder: 14
 itemOrder: 12
 country: "South Korea"
 curator: "Micki"

@@ -2,7 +2,7 @@
 name: "Travelpro Crew 5 City Tote"
 region: "Travel Gear"
 subcategory: "ROLLABOARDS & CARRY-ON"
-subcategoryOrder: 1
+subcategoryOrder: 2
 itemOrder: 2
 curator: "Mic"
 pendingPhoto: true

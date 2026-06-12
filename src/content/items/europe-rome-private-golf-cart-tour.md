@@ -2,7 +2,7 @@
 name: "Rome private golf-cart tour"
 region: "Europe"
 subcategory: "ITALY — ROME (Mic's pick)"
-subcategoryOrder: 2.5
+subcategoryOrder: 0.5
 itemOrder: 1
 country: "Italy"
 city: "Rome"

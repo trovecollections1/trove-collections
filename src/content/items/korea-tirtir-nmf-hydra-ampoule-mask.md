@@ -2,7 +2,7 @@
 name: "TirTir NMF Hydra Ampoule Mask (30-sheet tin)"
 region: "East Asia"
 subcategory: "TREATMENTS & TOOLS"
-subcategoryOrder: 120
+subcategoryOrder: 18
 itemOrder: 14
 country: "South Korea"
 curator: "Micki"
