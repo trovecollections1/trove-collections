@@ -2,7 +2,7 @@
 name: "Brightline Bags modular flight bag"
 region: "Crew Gear"
 subcategory: "FLIGHT BAGS"
-subcategoryOrder: 2
+subcategoryOrder: 0.5
 itemOrder: 1
 curator: "Mic"
 photo: /images/items/gear-brightline-bags-modular-flight-bag.jpg?v=4

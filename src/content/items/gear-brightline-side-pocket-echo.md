@@ -2,7 +2,7 @@
 name: "Brightline Side Pocket Echo — water bottle pocket"
 region: "Crew Gear"
 subcategory: "FLIGHT BAGS"
-subcategoryOrder: 2
+subcategoryOrder: 0.5
 itemOrder: 2
 curator: "Mic"
 photo: /images/items/gear-brightline-side-pocket-echo.jpg
