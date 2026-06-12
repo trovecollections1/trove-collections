@@ -10,11 +10,11 @@ const items = all
 
 // Group by itemOrder ranges into shopping-logical sections
 const buckets = [
-  { title: 'Shoes', test: (o: number) => o >= 1 && o <= 8 },
-  { title: 'Shirts, Sweaters & the Blazer', test: (o: number) => o >= 9 && o <= 12 },
-  { title: 'Pants', test: (o: number) => o >= 13 && o <= 23 },
-  { title: 'The Finishing Pieces', test: (o: number) => o >= 24 && o <= 26 },
-  { title: 'Jewelry', test: (o: number) => o >= 27 && o <= 31 },
+  { title: 'Shirts, Sweaters & the Blazer', test: (o: number) => o >= 1 && o <= 8 },
+  { title: 'Pants', test: (o: number) => o >= 9 && o <= 17 },
+  { title: 'Shoes', test: (o: number) => o >= 18 && o <= 25 },
+  { title: 'The Finishing Pieces', test: (o: number) => o >= 26 && o <= 28 },
+  { title: 'Jewelry', test: (o: number) => o >= 29 && o <= 33 },
 ];
 const grouped = buckets
   .map(b => ({ title: b.title, list: items.filter(i => b.test(i.data.itemOrder ?? 0)) }))
