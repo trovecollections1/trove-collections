@@ -3,7 +3,7 @@ name: "Magaschoni cashmere turtleneck"
 region: "North America"
 subcategory: "LADIES BUSINESS ATTIRE"
 subcategoryOrder: 3
-itemOrder: 11.6
+itemOrder: 7
 country: "USA"
 curator: "Mic"
 photo: /images/items/na-magaschoni-cashmere.png?v=2

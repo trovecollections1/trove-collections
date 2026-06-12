@@ -3,7 +3,7 @@ name: "Michael Kors patent leather heel"
 region: "North America"
 subcategory: "LADIES BUSINESS ATTIRE"
 subcategoryOrder: 3
-itemOrder: 6
+itemOrder: 23
 country: "USA"
 curator: "Mic"
 photo: /images/items/na-michael-kors-patent-leather-heel.png?v=2

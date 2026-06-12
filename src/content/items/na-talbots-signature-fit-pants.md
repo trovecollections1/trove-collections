@@ -3,7 +3,7 @@ name: "Talbots Signature Fit pants"
 region: "North America"
 subcategory: "LADIES BUSINESS ATTIRE"
 subcategoryOrder: 3
-itemOrder: 14
+itemOrder: 10
 country: "USA"
 curator: "Mic"
 photo: /images/items/na-talbots-signature-fit-pants.png?v=4

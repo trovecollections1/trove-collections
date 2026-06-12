@@ -3,7 +3,7 @@ name: "Talbots Modern pants"
 region: "North America"
 subcategory: "LADIES BUSINESS ATTIRE"
 subcategoryOrder: 3
-itemOrder: 15
+itemOrder: 11
 country: "USA"
 curator: "Mic"
 photo: /images/items/na-talbots-modern-pants.png?v=2

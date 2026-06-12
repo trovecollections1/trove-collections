@@ -3,7 +3,7 @@ name: "Tahari sweaters"
 region: "North America"
 subcategory: "LADIES BUSINESS ATTIRE"
 subcategoryOrder: 3
-itemOrder: 10
+itemOrder: 4
 country: "USA"
 curator: "Mic"
 photo: /images/items/na-tahari-sweaters.png?v=2

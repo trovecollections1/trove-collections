@@ -3,7 +3,7 @@ name: "Nine West kitten-heel ankle boot — black"
 region: "North America"
 subcategory: "LADIES BUSINESS ATTIRE"
 subcategoryOrder: 3
-itemOrder: 7
+itemOrder: 24
 country: "USA"
 curator: "Mic"
 photo: /images/items/na-nine-west-kitten-heel-ankle-boot-black.png

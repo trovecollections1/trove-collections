@@ -3,7 +3,7 @@ name: "Talbots wrinkle-resistant blouses"
 region: "North America"
 subcategory: "LADIES BUSINESS ATTIRE"
 subcategoryOrder: 3
-itemOrder: 9.5
+itemOrder: 2
 country: "USA"
 curator: "Mic"
 photo: /images/items/na-talbots-wrinkle-resistant-blouses.png

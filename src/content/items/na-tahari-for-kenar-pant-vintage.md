@@ -3,7 +3,7 @@ name: "Ann Tjian for Kenar slacks — vintage"
 region: "North America"
 subcategory: "LADIES BUSINESS ATTIRE"
 subcategoryOrder: 3
-itemOrder: 23
+itemOrder: 17
 country: "USA"
 curator: "Mic"
 photo: /images/items/na-tahari-for-kenar-pant-vintage.png?v=3

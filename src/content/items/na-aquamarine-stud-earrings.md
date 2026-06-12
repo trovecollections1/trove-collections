@@ -3,7 +3,7 @@ name: "Aquamarine stud earrings"
 region: "North America"
 subcategory: "LADIES BUSINESS ATTIRE"
 subcategoryOrder: 3
-itemOrder: 30
+itemOrder: 32
 country: "USA"
 curator: "Mic"
 photo: /images/items/na-aquamarine-stud-earrings.png

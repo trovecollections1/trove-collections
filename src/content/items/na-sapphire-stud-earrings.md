@@ -3,7 +3,7 @@ name: "Sapphire stud earrings"
 region: "North America"
 subcategory: "LADIES BUSINESS ATTIRE"
 subcategoryOrder: 3
-itemOrder: 31
+itemOrder: 33
 country: "USA"
 curator: "Mic"
 photo: /images/items/na-sapphire-stud-earrings.png

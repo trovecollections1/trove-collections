@@ -3,7 +3,7 @@ name: "Johnston & Murphy women's oxford — brown"
 region: "North America"
 subcategory: "LADIES BUSINESS ATTIRE"
 subcategoryOrder: 3
-itemOrder: 3
+itemOrder: 20
 country: "USA"
 curator: "Mic"
 photo: /images/items/na-johnston-murphy-women-s-oxford-brown.png

@@ -3,7 +3,7 @@ name: "Spanx Ponte wide-leg pant"
 region: "North America"
 subcategory: "LADIES BUSINESS ATTIRE"
 subcategoryOrder: 3
-itemOrder: 21
+itemOrder: 15
 country: "USA"
 curator: "Mic"
 photo: /images/items/na-spanx-ponte-wide-leg-pant.png?v=2

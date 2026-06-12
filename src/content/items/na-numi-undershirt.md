@@ -3,7 +3,7 @@ name: "Numi undershirt"
 region: "North America"
 subcategory: "LADIES BUSINESS ATTIRE"
 subcategoryOrder: 3
-itemOrder: 8.5
+itemOrder: 3
 country: "USA"
 curator: "Mic"
 photo: /images/items/na-numi-undershirt.png

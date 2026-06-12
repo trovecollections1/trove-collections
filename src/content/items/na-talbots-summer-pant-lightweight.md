@@ -3,7 +3,7 @@ name: "Talbots summer pant — lightweight"
 region: "North America"
 subcategory: "LADIES BUSINESS ATTIRE"
 subcategoryOrder: 3
-itemOrder: 17
+itemOrder: 12
 country: "USA"
 curator: "Mic"
 photo: /images/items/na-talbots-summer-pant-lightweight.png?v=3

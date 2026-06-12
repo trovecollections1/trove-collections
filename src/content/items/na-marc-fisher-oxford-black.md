@@ -3,7 +3,7 @@ name: "Marc Fisher oxford — black"
 region: "North America"
 subcategory: "LADIES BUSINESS ATTIRE"
 subcategoryOrder: 3
-itemOrder: 4
+itemOrder: 21
 country: "USA"
 curator: "Mic"
 photo: /images/items/na-marc-fisher-oxford-black.png

@@ -3,7 +3,7 @@ name: "Brooks Brothers turtleneck sweater"
 region: "North America"
 subcategory: "LADIES BUSINESS ATTIRE"
 subcategoryOrder: 3
-itemOrder: 11.3
+itemOrder: 6
 country: "USA"
 curator: "Mic"
 photo: /images/items/na-brooks-brothers-turtleneck.png

@@ -3,7 +3,7 @@ name: "Sneex — black"
 region: "North America"
 subcategory: "LADIES BUSINESS ATTIRE"
 subcategoryOrder: 3
-itemOrder: 8
+itemOrder: 25
 country: "USA"
 curator: "Mic"
 photo: /images/items/na-sneex-black.png

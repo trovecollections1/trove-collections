@@ -3,7 +3,7 @@ name: "Talbots scarves"
 region: "North America"
 subcategory: "LADIES BUSINESS ATTIRE"
 subcategoryOrder: 3
-itemOrder: 24
+itemOrder: 26
 country: "USA"
 curator: "Mic"
 photo: /images/items/na-talbots-scarves.png

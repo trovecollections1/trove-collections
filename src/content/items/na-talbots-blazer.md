@@ -3,7 +3,7 @@ name: "Talbots houndstooth blazer"
 region: "North America"
 subcategory: "LADIES BUSINESS ATTIRE"
 subcategoryOrder: 3
-itemOrder: 12
+itemOrder: 8
 country: "USA"
 curator: "Mic"
 photo: /images/items/na-talbots-blazer.png?v=2

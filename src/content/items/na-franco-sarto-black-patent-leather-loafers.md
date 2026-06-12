@@ -3,7 +3,7 @@ name: "Franco Sarto black patent leather loafers"
 region: "North America"
 subcategory: "LADIES BUSINESS ATTIRE"
 subcategoryOrder: 3
-itemOrder: 2
+itemOrder: 19
 country: "USA"
 curator: "Mic"
 photo: /images/items/na-franco-sarto-black-patent-leather-loafers.png

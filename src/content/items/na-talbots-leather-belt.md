@@ -3,7 +3,7 @@ name: "Talbots leather belt"
 region: "North America"
 subcategory: "LADIES BUSINESS ATTIRE"
 subcategoryOrder: 3
-itemOrder: 25
+itemOrder: 27
 country: "USA"
 curator: "Mic"
 photo: /images/items/na-talbots-leather-belt.png

@@ -3,7 +3,7 @@ name: "Tabio tights — Japanese-brand opaque"
 region: "North America"
 subcategory: "LADIES BUSINESS ATTIRE"
 subcategoryOrder: 3
-itemOrder: 26
+itemOrder: 28
 country: "USA"
 curator: "Mic"
 photo: /images/items/na-tabio-tights-japanese-brand-opaque.png

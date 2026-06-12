@@ -3,7 +3,7 @@ name: "Franco Sarto brown suede bit loafers"
 region: "North America"
 subcategory: "LADIES BUSINESS ATTIRE"
 subcategoryOrder: 3
-itemOrder: 1
+itemOrder: 18
 country: "USA"
 curator: "Mic"
 photo: /images/items/USA-Franco-Sarto-brown-suede-bit-loafers.png

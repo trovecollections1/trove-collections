@@ -3,7 +3,7 @@ name: "Talbots Heritage straight-leg pants"
 region: "North America"
 subcategory: "LADIES BUSINESS ATTIRE"
 subcategoryOrder: 3
-itemOrder: 13
+itemOrder: 9
 country: "USA"
 curator: "Mic"
 photo: /images/items/na-talbots-heritage-straight-leg-pants.png?v=3

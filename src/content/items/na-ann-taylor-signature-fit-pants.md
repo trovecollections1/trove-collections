@@ -3,7 +3,7 @@ name: "Ann Taylor Signature Fit pants"
 region: "North America"
 subcategory: "LADIES BUSINESS ATTIRE"
 subcategoryOrder: 3
-itemOrder: 18
+itemOrder: 13
 country: "USA"
 curator: "Mic"
 photo: /images/items/na-ann-taylor-signature-fit-pants.png?v=3

@@ -3,7 +3,7 @@ name: "Ann Taylor brown stripe pant"
 region: "North America"
 subcategory: "LADIES BUSINESS ATTIRE"
 subcategoryOrder: 3
-itemOrder: 19
+itemOrder: 14
 country: "USA"
 curator: "Mic"
 photo: /images/items/na-ann-taylor-brown-stripe-pant.png?v=4

@@ -3,7 +3,7 @@ name: "Brooks Brothers — Mic's daily rotation"
 region: "North America"
 subcategory: "LADIES BUSINESS ATTIRE"
 subcategoryOrder: 3
-itemOrder: 9
+itemOrder: 1
 country: "USA"
 curator: "Mic"
 photo: /images/items/na-brooks-brothers-women-s-non-iron-shirts.png?v=2

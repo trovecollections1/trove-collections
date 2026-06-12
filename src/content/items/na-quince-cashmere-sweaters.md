@@ -3,7 +3,7 @@ name: "Quince cashmere sweaters"
 region: "North America"
 subcategory: "LADIES BUSINESS ATTIRE"
 subcategoryOrder: 3
-itemOrder: 11
+itemOrder: 5
 country: "USA"
 curator: "Mic"
 photo: /images/items/na-quince-cashmere-sweaters.png?v=2

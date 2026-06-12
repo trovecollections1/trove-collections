@@ -3,7 +3,7 @@ name: "Burberry heel"
 region: "North America"
 subcategory: "LADIES BUSINESS ATTIRE"
 subcategoryOrder: 3
-itemOrder: 5
+itemOrder: 22
 country: "USA"
 curator: "Mic"
 photo: /images/items/na-burberry-heel.png
