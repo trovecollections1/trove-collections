@@ -6,7 +6,7 @@ subcategoryOrder: 1
 itemOrder: 2
 country: "USA"
 curator: "Mic"
-photo: /images/items/gear-brightline-flex-compact-bag.jpg
+photo: /images/items/gear-brightline-flex-compact-bag.jpg?v=2
 affiliateUrl: "https://www.brightlinebags.com?AFFID=699742"
 affiliateProgram: "BrightLine Bags"
 pendingPhoto: false

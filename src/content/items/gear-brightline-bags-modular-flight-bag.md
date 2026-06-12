@@ -5,7 +5,7 @@ subcategory: "FLIGHT BAGS"
 subcategoryOrder: 2
 itemOrder: 1
 curator: "Mic"
-photo: /images/items/gear-brightline-bags-modular-flight-bag.jpg?v=3
+photo: /images/items/gear-brightline-bags-modular-flight-bag.jpg?v=4
 affiliateUrl: "https://www.brightlinebags.com?AFFID=699742"
 affiliateProgram: "BrightLine Bags"
 pendingPhoto: false

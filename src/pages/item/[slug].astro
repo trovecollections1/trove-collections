@@ -34,9 +34,15 @@ const { Content } = await item.render();
     <p class="curator muted">Picked by {item.data.curator}</p>
 
     {item.data.photo && !item.data.pendingPhoto && (
-      <div class="photo">
-        <img src={item.data.photo} alt={item.data.name} />
-      </div>
+      item.data.affiliateUrl ? (
+        <a href={item.data.affiliateUrl} class="photo photo-link" rel="sponsored noopener" target="_blank" aria-label={`Shop ${item.data.name}`}>
+          <img src={item.data.photo} alt={item.data.name} />
+        </a>
+      ) : (
+        <div class="photo">
+          <img src={item.data.photo} alt={item.data.name} />
+        </div>
+      )
     )}
 
     {item.data.additionalPhotos && item.data.additionalPhotos.length > 0 && (
@@ -74,6 +80,11 @@ const { Content } = await item.render();
   .breadcrumb a { color: var(--muted); border: 0; }
   .breadcrumb a:hover { color: var(--ink); }
   .curator { font-style: italic; margin-bottom: 1.5rem; }
+  .photo-link {
+    display: block;
+    border-bottom: 0;
+  }
+  .photo-link:hover { opacity: 0.95; }
   .photo {
     aspect-ratio: 1 / 1;
     background: #FFFFFF;
