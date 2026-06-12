@@ -7,6 +7,8 @@ itemOrder: 2
 country: "USA"
 curator: "Mic"
 photo: /images/items/gear-brightline-flex-compact-bag.jpg
+affiliateUrl: "https://www.brightlinebags.com?AFFID=699742"
+affiliateProgram: "BrightLine Bags"
 pendingPhoto: false
 ---
 
