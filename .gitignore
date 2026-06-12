@@ -45,6 +45,13 @@ quick-push.sh
 # Raw NA item .jpeg uploads (replaced by processed .png versions)
 public/images/items/na-*.jpeg
 public/images/items/na-*.jpg
+# EXCEPT processed site photos that live items reference (2026-06-12 fix —
+# the blanket rule above was silently keeping these out of the repo)
+!public/images/items/na-bb-summer-pajamas.jpg
+!public/images/items/na-cozy-earth-cityscape-sweatsuit.jpg
+!public/images/items/na-cozy-earth-soft-grey-loungewear.jpg
+!public/images/items/na-cozy-earth-soft-pink-pajamas.jpg
+!public/images/items/na-soft-lemon-monogrammed-pajamas.jpg
 
 # Replaced/removed items
 src/content/items/na-ugg-classic-mini-ultra-mini-micro-sheepskin-boots.md
