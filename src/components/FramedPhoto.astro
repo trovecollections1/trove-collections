@@ -16,9 +16,11 @@ interface Props {
   alt: string;
   width: number;
   height: number;
+  /** Set for above-the-fold LCP images (e.g. homepage hero) */
+  priority?: boolean;
 }
 
-const { src, alt, width, height } = Astro.props;
+const { src, alt, width, height, priority = false } = Astro.props;
 ---
 
 <div class="framed-photo">
@@ -29,6 +31,8 @@ const { src, alt, width, height } = Astro.props;
       alt={alt}
       width={width}
       height={height}
+      fetchpriority={priority ? 'high' : undefined}
+      loading={priority ? 'eager' : undefined}
     />
   </div>
 </div>
