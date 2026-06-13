@@ -1,9 +1,9 @@
 ---
 name: "Brightline FLEX bag — built to size"
-region: "Travel Gear"
-subcategory: "BAGS"
-subcategoryOrder: 1
-itemOrder: 1
+region: "Crew Gear"
+subcategory: "FLIGHT BAGS"
+subcategoryOrder: 0.5
+itemOrder: 3
 country: "USA"
 curator: "Mic"
 photo: /images/items/gear-brightline-flex-compact-bag.jpg?v=2

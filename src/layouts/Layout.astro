@@ -14,6 +14,8 @@ export interface Props {
   image?: string;
   /** Open Graph type — "website" for general pages, "article" for item/story pages. */
   ogType?: string;
+  /** Preload this above-the-fold hero image for a faster LCP (e.g. homepage hero). */
+  heroPreload?: string;
 }
 
 const {
@@ -22,6 +24,7 @@ const {
   topDisclosure = true,
   image,
   ogType = "website",
+  heroPreload,
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -38,6 +41,7 @@ import DisclosureBanner from '../components/DisclosureBanner.astro';
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {heroPreload && <link rel="preload" as="image" href={heroPreload} fetchpriority="high" />}
     <link rel="icon" type="image/png" href="/favicon-tc.png?v=2" />
     <link rel="apple-touch-icon" href="/favicon-tc.png?v=2" />
     <meta name="generator" content={Astro.generator} />
