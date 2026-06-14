@@ -5,7 +5,8 @@ subcategory: "WEEKENDERS"
 subcategoryOrder: 1.5
 itemOrder: 5
 curator: "Mic"
-pendingPhoto: true
+photo: /images/items/gear-tumi-voyageur-contine-weekender.png
+pendingPhoto: false
 affiliateUrl: "https://www.amazon.com/dp/B0BBS5TG8Z?tag=trovecollec0d-20"
 ---
 
