@@ -9,6 +9,8 @@ city: "Tokyo"
 curator: "Kristen"
 photo: /images/items/Japan-Tokyo-Kokeshi-dolls-collection.jpg
 pendingPhoto: false
+affiliateUrl: "https://www.amazon.com/s?k=kokeshi+doll&tag=trovecollec0d-20"
+affiliateProgram: "Amazon Associates"
 ---
 
-Auntie Kristen — Micki's younger sister, a pilot at the same airline — has been building this collection on her Tokyo layovers for years. Kokeshi are the traditional wooden dolls of northern Japan, originally souvenirs from hot-spring villages in the 19th-century Tōhoku region. Cylindrical bodies, round heads, hand-painted kimono patterns. She gathers them trip by trip, building a multi-generational heirloom shelf for her daughter. — Eris
+Auntie Kristen — Micki's younger sister, a pilot at the same airline — has been building this collection on her Tokyo layovers for years. Kokeshi are the traditional wooden dolls of northern Japan, originally souvenirs from hot-spring villages in the 19th-century Tōhoku region. Cylindrical bodies, round heads, hand-painted kimono patterns. She gathers them trip by trip, building a multi-generational heirloom shelf for her daughter. Hers were gathered trip by trip and aren't sold as a set — the Shop link opens a curated selection of kokeshi so you can start your own shelf. — Eris
