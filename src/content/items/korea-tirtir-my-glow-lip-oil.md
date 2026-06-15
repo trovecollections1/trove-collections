@@ -6,7 +6,7 @@ subcategoryOrder: 17
 itemOrder: 1
 country: "South Korea"
 curator: "Micki"
-photo: /images/items/Korea-TirTir-My-Glow-Lip-Oil.jpg
+photo: /images/items/Korea-TirTir-My-Glow-Lip-Oil.jpg?v=2
 pendingPhoto: false
 ---
 

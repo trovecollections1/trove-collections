@@ -6,7 +6,7 @@ subcategoryOrder: 18
 itemOrder: 13
 country: "South Korea"
 curator: "Micki"
-photo: /images/items/Korea-VT-Reedle-Shot-300.jpg
+photo: /images/items/Korea-VT-Reedle-Shot-300.jpg?v=2
 pendingPhoto: false
 affiliateUrl: "https://www.amazon.com/dp/B0C2TQ24VY?tag=trovecollec0d-20"
 ---

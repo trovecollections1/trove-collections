@@ -6,7 +6,7 @@ subcategoryOrder: 12
 itemOrder: 2
 country: "South Korea"
 curator: "Micki"
-photo: /images/items/Korea-TirTir-Hydro-Boost-Enzyme-Powder-Wash.jpg
+photo: /images/items/Korea-TirTir-Hydro-Boost-Enzyme-Powder-Wash.jpg?v=2
 pendingPhoto: false
 ---
 

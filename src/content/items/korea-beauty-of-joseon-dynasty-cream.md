@@ -6,7 +6,7 @@ subcategoryOrder: 15
 itemOrder: 7
 country: "South Korea"
 curator: "Micki"
-photo: /images/items/Korea-Beauty-of-Joseon-Dynasty-Cream.jpg
+photo: /images/items/Korea-Beauty-of-Joseon-Dynasty-Cream.jpg?v=2
 pendingPhoto: false
 affiliateUrl: "https://www.amazon.com/dp/B08WJQ3XJD?tag=trovecollec0d-20"
 ---

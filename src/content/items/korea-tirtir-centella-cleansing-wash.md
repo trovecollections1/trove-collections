@@ -6,7 +6,7 @@ subcategoryOrder: 12
 itemOrder: 3
 country: "South Korea"
 curator: "Micki"
-photo: /images/items/Korea-TirTir-Centella-Cleansing-Wash.jpg
+photo: /images/items/Korea-TirTir-Centella-Cleansing-Wash.jpg?v=2
 pendingPhoto: false
 ---
 

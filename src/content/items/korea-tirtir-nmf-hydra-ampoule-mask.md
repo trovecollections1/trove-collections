@@ -6,7 +6,7 @@ subcategoryOrder: 18
 itemOrder: 14
 country: "South Korea"
 curator: "Micki"
-photo: /images/items/Korea-TirTir-NMF-Hydra-Ampoule-Mask.jpg
+photo: /images/items/Korea-TirTir-NMF-Hydra-Ampoule-Mask.jpg?v=2
 pendingPhoto: false
 ---
 
