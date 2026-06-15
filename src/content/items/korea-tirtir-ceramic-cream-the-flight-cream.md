@@ -6,7 +6,7 @@ subcategoryOrder: 15
 itemOrder: 8
 country: "South Korea"
 curator: "Micki"
-photo: /images/items/Korea-TirTir-Ceramic-Cream.jpg
+photo: /images/items/Korea-TirTir-Ceramic-Cream.jpg?v=2
 pendingPhoto: false
 ---
 

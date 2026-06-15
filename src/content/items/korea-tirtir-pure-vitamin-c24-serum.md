@@ -6,7 +6,7 @@ subcategoryOrder: 13
 itemOrder: 6
 country: "South Korea"
 curator: "Micki"
-photo: /images/items/Korea-TirTir-Pure-Vitamin-C24-Serum.jpg
+photo: /images/items/Korea-TirTir-Pure-Vitamin-C24-Serum.jpg?v=2
 pendingPhoto: false
 ---
 

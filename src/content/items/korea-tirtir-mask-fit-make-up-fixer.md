@@ -6,7 +6,7 @@ subcategoryOrder: 16
 itemOrder: 11
 country: "South Korea"
 curator: "Micki"
-photo: /images/items/Korea-TirTir-Mask-Fit-Make-Up-Fixer.jpg
+photo: /images/items/Korea-TirTir-Mask-Fit-Make-Up-Fixer.jpg?v=2
 pendingPhoto: false
 ---
 

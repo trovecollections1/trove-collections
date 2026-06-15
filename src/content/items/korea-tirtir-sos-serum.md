@@ -6,7 +6,7 @@ subcategoryOrder: 13
 itemOrder: 4
 country: "South Korea"
 curator: "Micki"
-photo: /images/items/Korea-TirTir-SOS-Serum.jpg
+photo: /images/items/Korea-TirTir-SOS-Serum.jpg?v=2
 pendingPhoto: false
 ---
 

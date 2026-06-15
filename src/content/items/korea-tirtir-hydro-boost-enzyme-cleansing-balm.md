@@ -6,7 +6,7 @@ subcategoryOrder: 12
 itemOrder: 1
 country: "South Korea"
 curator: "Micki"
-photo: /images/items/Korea-TirTir-Hydro-Boost-Enzyme-Cleansing-Balm.jpg
+photo: /images/items/Korea-TirTir-Hydro-Boost-Enzyme-Cleansing-Balm.jpg?v=2
 pendingPhoto: false
 ---
 
