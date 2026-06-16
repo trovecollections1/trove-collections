@@ -5,7 +5,7 @@ subcategory: "FLIGHT BAGS"
 subcategoryOrder: 0.5
 itemOrder: 2
 curator: "Mic"
-photo: /images/items/gear-brightline-side-pocket-echo.jpg
+photo: /images/items/gear-brightline-side-pocket-echo.jpg?v=2
 affiliateUrl: "https://www.brightlinebags.com?AFFID=699742"
 affiliateProgram: "BrightLine Bags"
 pendingPhoto: false
