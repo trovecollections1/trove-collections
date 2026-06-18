@@ -6,11 +6,12 @@ export interface Props {
   photo?: string;
   additionalPhotos?: string[];
   affiliateUrl?: string;
+  similarAffiliateUrl?: string;
   pendingPhoto?: boolean;
   slug: string;
 }
 
-const { name, curator, blurb, photo, additionalPhotos, affiliateUrl, pendingPhoto, slug } = Astro.props;
+const { name, curator, blurb, photo, additionalPhotos, affiliateUrl, similarAffiliateUrl, pendingPhoto, slug } = Astro.props;
 const photoCount = 1 + (additionalPhotos?.length ?? 0);
 const hasMultiple = (additionalPhotos?.length ?? 0) > 0 && photo && !pendingPhoto;
 ---
@@ -35,6 +36,11 @@ const hasMultiple = (additionalPhotos?.length ?? 0) > 0 && photo && !pendingPhot
     {affiliateUrl && (
       <a href={affiliateUrl} class="shop-link" rel="sponsored noopener" target="_blank">
         Shop this &rarr;
+      </a>
+    )}
+    {!affiliateUrl && similarAffiliateUrl && (
+      <a href={similarAffiliateUrl} class="shop-link shop-similar" rel="sponsored noopener" target="_blank">
+        Shop a similar one &rarr;
       </a>
     )}
   </div>
@@ -116,5 +122,16 @@ const hasMultiple = (additionalPhotos?.length ?? 0) > 0 && photo && !pendingPhot
   .shop-link:hover {
     opacity: 0.88;
     color: #FFFFFF;
+  }
+  .shop-similar {
+    background: transparent;
+    color: var(--accent);
+    border: 1.5px solid var(--accent);
+    padding: calc(0.55rem - 1.5px) calc(1.25rem - 1.5px);
+  }
+  .shop-similar:hover {
+    background: var(--accent);
+    color: #FFFFFF;
+    opacity: 1;
   }
 </style>

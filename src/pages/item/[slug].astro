@@ -71,6 +71,20 @@ const { Content } = await item.render();
         </p>
       </>
     )}
+
+    {!item.data.affiliateUrl && item.data.similarAffiliateUrl && (
+      <>
+        <a href={item.data.similarAffiliateUrl} class="shop-button shop-similar" rel="sponsored noopener" target="_blank">
+          Shop a similar one &rarr;
+        </a>
+
+        <p class="muted small disclosure-note">
+          This one's a one-of-a-kind find, so this link points to a <em>similar</em> item
+          you can shop — not the exact piece pictured. Trove Collections may earn a small
+          commission. <a href="/disclosure">How affiliate links work here.</a>
+        </p>
+      </>
+    )}
   </article>
 </Layout>
 
@@ -138,6 +152,12 @@ const { Content } = await item.render();
     letter-spacing: 0.01em;
   }
   .shop-button:hover { opacity: 0.85; color: #FFFFFF; }
+  .shop-button.shop-similar {
+    background: transparent;
+    color: var(--accent);
+    border: 1.5px solid var(--accent);
+  }
+  .shop-button.shop-similar:hover { background: var(--accent); color: #FFFFFF; opacity: 1; }
   .small { font-size: 0.85rem; }
   .disclosure-note { margin-top: 1.5rem; }
 </style>

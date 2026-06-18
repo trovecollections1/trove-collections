@@ -24,6 +24,7 @@ const items = defineCollection({
     photo: z.string().optional(),
     additionalPhotos: z.array(z.string()).optional(),
     affiliateUrl: z.string().url().optional(),
+    similarAffiliateUrl: z.string().url().optional(),
     affiliateProgram: z.string().optional(),
     priceUSD: z.number().optional(),
     tags: z.array(z.string()).optional(),
