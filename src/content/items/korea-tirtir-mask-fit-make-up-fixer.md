@@ -6,7 +6,7 @@ subcategoryOrder: 16
 itemOrder: 11
 country: "South Korea"
 curator: "Micki"
-photo: /images/items/Korea-TirTir-Mask-Fit-Make-Up-Fixer.jpg?v=2
+photo: /images/items/Korea-TirTir-Mask-Fit-Make-Up-Fixer.jpg?v=20260618
 pendingPhoto: false
 affiliateUrl: "https://www.amazon.com/s?k=tirtir+mask+fit+makeup+fixer&tag=trovecollec0d-20"
 affiliateProgram: "Amazon Associates"

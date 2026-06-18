@@ -5,7 +5,7 @@ subcategory: "BEAUTY"
 subcategoryOrder: 1
 itemOrder: 3
 curator: "Eris"
-photo: /images/items/eris-laifen-toothbrush.png
+photo: /images/items/eris-laifen-toothbrush.png?v=20260618
 pendingPhoto: false
 affiliateUrl: "https://www.laifentech.com/products/laifen-wave-special-electric-toothbrush?sca_ref=11428336.6Sk5lctTwC&utm_source=marketing&utm_medium=aff&utm_campaign=michelle-sharp"
 ---

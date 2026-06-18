@@ -6,7 +6,7 @@ subcategoryOrder: 16
 itemOrder: 9
 country: "South Korea"
 curator: "Micki"
-photo: /images/items/Korea-Erborian-Pink-Primer-and-Care.jpg
+photo: /images/items/Korea-Erborian-Pink-Primer-and-Care.jpg?v=20260618
 pendingPhoto: false
 affiliateUrl: "https://www.amazon.com/dp/B07MVXKVGM?tag=trovecollec0d-20"
 ---

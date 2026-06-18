@@ -6,7 +6,7 @@ subcategoryOrder: 17
 itemOrder: 1
 country: "South Korea"
 curator: "Micki"
-photo: /images/items/Korea-TirTir-My-Glow-Lip-Oil.jpg?v=2
+photo: /images/items/Korea-TirTir-My-Glow-Lip-Oil.jpg?v=20260618
 pendingPhoto: false
 affiliateUrl: "https://www.amazon.com/s?k=tirtir+my+glow+lip+oil&tag=trovecollec0d-20"
 affiliateProgram: "Amazon Associates"

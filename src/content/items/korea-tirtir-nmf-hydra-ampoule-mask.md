@@ -6,7 +6,7 @@ subcategoryOrder: 18
 itemOrder: 14
 country: "South Korea"
 curator: "Micki"
-photo: /images/items/Korea-TirTir-NMF-Hydra-Ampoule-Mask.jpg?v=2
+photo: /images/items/Korea-TirTir-NMF-Hydra-Ampoule-Mask.jpg?v=20260618
 pendingPhoto: false
 affiliateUrl: "https://www.amazon.com/s?k=tirtir+nmf+hydra+ampoule+mask&tag=trovecollec0d-20"
 affiliateProgram: "Amazon Associates"

@@ -6,7 +6,7 @@ subcategoryOrder: 13
 itemOrder: 4
 country: "South Korea"
 curator: "Micki"
-photo: /images/items/Korea-TirTir-SOS-Serum.jpg?v=2
+photo: /images/items/Korea-TirTir-SOS-Serum.jpg?v=20260618
 pendingPhoto: false
 affiliateUrl: "https://www.amazon.com/s?k=tirtir+sos+serum&tag=trovecollec0d-20"
 affiliateProgram: "Amazon Associates"

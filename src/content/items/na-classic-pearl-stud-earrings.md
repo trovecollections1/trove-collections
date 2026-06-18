@@ -6,7 +6,7 @@ subcategoryOrder: 3
 itemOrder: 30
 country: "USA"
 curator: "Mic"
-photo: /images/items/na-classic-pearl-stud-earrings.png
+photo: /images/items/na-classic-pearl-stud-earrings.png?v=20260618
 pendingPhoto: false
 ---
 

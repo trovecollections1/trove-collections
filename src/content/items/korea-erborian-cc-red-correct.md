@@ -6,7 +6,7 @@ subcategoryOrder: 16
 itemOrder: 10
 country: "South Korea"
 curator: "Micki"
-photo: /images/items/Korea-Erborian-CC-Red-Correct.jpg
+photo: /images/items/Korea-Erborian-CC-Red-Correct.jpg?v=20260618
 pendingPhoto: false
 affiliateUrl: "https://www.amazon.com/dp/B09TSS9XK6?tag=trovecollec0d-20"
 ---

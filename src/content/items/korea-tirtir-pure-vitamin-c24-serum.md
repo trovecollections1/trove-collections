@@ -6,7 +6,7 @@ subcategoryOrder: 13
 itemOrder: 6
 country: "South Korea"
 curator: "Micki"
-photo: /images/items/Korea-TirTir-Pure-Vitamin-C24-Serum.jpg?v=2
+photo: /images/items/Korea-TirTir-Pure-Vitamin-C24-Serum.jpg?v=20260618
 pendingPhoto: false
 affiliateUrl: "https://www.amazon.com/s?k=tirtir+vitamin+c24+serum&tag=trovecollec0d-20"
 affiliateProgram: "Amazon Associates"

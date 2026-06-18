@@ -6,7 +6,7 @@ subcategoryOrder: 3
 itemOrder: 31
 country: "USA"
 curator: "Mic"
-photo: /images/items/na-diamond-stud-earrings.png
+photo: /images/items/na-diamond-stud-earrings.png?v=20260618
 pendingPhoto: false
 ---
 

@@ -5,7 +5,7 @@ subcategory: "OTHER / TECH & LIFESTYLE"
 subcategoryOrder: 1.5
 itemOrder: 24
 curator: "Eris"
-photo: /images/items/eris-airpods-max.png
+photo: /images/items/eris-airpods-max.png?v=20260618
 pendingPhoto: false
 affiliateUrl: "https://www.amazon.com/dp/B0GSS4SGZR?tag=trovecollec0d-20"
 ---

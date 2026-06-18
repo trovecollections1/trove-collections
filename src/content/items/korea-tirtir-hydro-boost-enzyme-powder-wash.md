@@ -6,7 +6,7 @@ subcategoryOrder: 12
 itemOrder: 2
 country: "South Korea"
 curator: "Micki"
-photo: /images/items/Korea-TirTir-Hydro-Boost-Enzyme-Powder-Wash.jpg?v=2
+photo: /images/items/Korea-TirTir-Hydro-Boost-Enzyme-Powder-Wash.jpg?v=20260618
 pendingPhoto: false
 affiliateUrl: "https://www.amazon.com/s?k=tirtir+enzyme+powder+wash&tag=trovecollec0d-20"
 affiliateProgram: "Amazon Associates"

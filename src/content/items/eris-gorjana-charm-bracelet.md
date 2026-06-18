@@ -5,7 +5,7 @@ subcategory: "JEWELRY"
 subcategoryOrder: 2
 itemOrder: 5
 curator: "Eris"
-photo: /images/items/eris-gorjana-charm-bracelet.png
+photo: /images/items/eris-gorjana-charm-bracelet.png?v=20260618
 pendingPhoto: false
 ---
 

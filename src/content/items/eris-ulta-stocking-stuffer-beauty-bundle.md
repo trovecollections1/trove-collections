@@ -5,7 +5,7 @@ subcategory: "BEAUTY"
 subcategoryOrder: 1
 itemOrder: 4
 curator: "Eris"
-photo: /images/items/eris-ulta-paulas-choice.png
+photo: /images/items/eris-ulta-paulas-choice.png?v=20260618
 additionalPhotos: ["/images/items/eris-ulta-living-proof.png", "/images/items/eris-ulta-teal-bottle.png"]
 pendingPhoto: false
 ---

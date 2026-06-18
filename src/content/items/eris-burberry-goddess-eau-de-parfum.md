@@ -5,7 +5,7 @@ subcategory: "BEAUTY"
 subcategoryOrder: 1
 itemOrder: 3.5
 curator: "Eris"
-photo: /images/items/eris-burberry-goddess.png
+photo: /images/items/eris-burberry-goddess.png?v=20260618
 pendingPhoto: false
 ---
 

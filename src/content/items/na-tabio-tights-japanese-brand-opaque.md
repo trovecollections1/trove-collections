@@ -6,7 +6,7 @@ subcategoryOrder: 3
 itemOrder: 28
 country: "USA"
 curator: "Mic"
-photo: /images/items/na-tabio-tights-japanese-brand-opaque.png
+photo: /images/items/na-tabio-tights-japanese-brand-opaque.png?v=20260618
 pendingPhoto: false
 ---
 

@@ -5,7 +5,7 @@ subcategory: "BEAUTY"
 subcategoryOrder: 1
 itemOrder: 2.6
 curator: "Eris"
-photo: /images/items/eris-medicube-collagen-mask.png
+photo: /images/items/eris-medicube-collagen-mask.png?v=20260618
 pendingPhoto: false
 affiliateUrl: "https://www.amazon.com/dp/B0DSJ584H3?tag=trovecollec0d-20"
 ---

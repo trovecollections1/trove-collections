@@ -6,7 +6,7 @@ subcategoryOrder: 5
 itemOrder: 1
 country: "USA"
 curator: "Mic"
-photo: /images/items/na-lanc-me-d-finicils-mascara-black.png
+photo: /images/items/na-lanc-me-d-finicils-mascara-black.png?v=20260618
 pendingPhoto: false
 affiliateUrl: "https://www.amazon.com/s?k=lancome+definicils+mascara&tag=trovecollec0d-20"
 affiliateProgram: "Amazon Associates"

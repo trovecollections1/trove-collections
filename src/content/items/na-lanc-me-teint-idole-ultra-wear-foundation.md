@@ -6,7 +6,7 @@ subcategoryOrder: 5
 itemOrder: 2
 country: "USA"
 curator: "Mic"
-photo: /images/items/na-lanc-me-teint-idole-ultra-wear-foundation.png
+photo: /images/items/na-lanc-me-teint-idole-ultra-wear-foundation.png?v=20260618
 pendingPhoto: false
 affiliateUrl: "https://www.amazon.com/s?k=lancome+teint+idole+ultra+wear+foundation&tag=trovecollec0d-20"
 affiliateProgram: "Amazon Associates"

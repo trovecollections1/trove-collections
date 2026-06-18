@@ -5,7 +5,7 @@ subcategory: "CLOTHING & SHOES"
 subcategoryOrder: 3
 itemOrder: 9
 curator: "Eris"
-photo: /images/items/eris-adidas-campus-00s.png
+photo: /images/items/eris-adidas-campus-00s.png?v=20260618
 pendingPhoto: false
 affiliateUrl: "https://www.amazon.com/dp/B0DJ6S6FRX?tag=trovecollec0d-20"
 ---

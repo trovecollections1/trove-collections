@@ -6,7 +6,7 @@ subcategoryOrder: 15
 itemOrder: 8
 country: "South Korea"
 curator: "Micki"
-photo: /images/items/Korea-TirTir-Ceramic-Cream.jpg?v=2
+photo: /images/items/Korea-TirTir-Ceramic-Cream.jpg?v=20260618
 pendingPhoto: false
 affiliateUrl: "https://www.amazon.com/s?k=tirtir+ceramic+cream&tag=trovecollec0d-20"
 affiliateProgram: "Amazon Associates"

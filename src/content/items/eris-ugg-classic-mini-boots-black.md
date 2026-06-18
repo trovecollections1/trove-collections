@@ -5,7 +5,7 @@ subcategory: "CLOTHING & SHOES"
 subcategoryOrder: 3
 itemOrder: 16
 curator: "Micki"
-photo: /images/items/eris-ugg-classic-mini-boots-black.png
+photo: /images/items/eris-ugg-classic-mini-boots-black.png?v=20260618
 pendingPhoto: false
 ---
 

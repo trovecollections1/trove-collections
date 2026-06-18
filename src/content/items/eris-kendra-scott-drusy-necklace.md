@@ -5,7 +5,7 @@ subcategory: "JEWELRY"
 subcategoryOrder: 2
 itemOrder: 9
 curator: "Eris"
-photo: /images/items/eris-kendra-scott-drusy-necklace.png
+photo: /images/items/eris-kendra-scott-drusy-necklace.png?v=20260618
 pendingPhoto: false
 ---
 

@@ -6,7 +6,7 @@ subcategoryOrder: 12
 itemOrder: 3
 country: "South Korea"
 curator: "Micki"
-photo: /images/items/Korea-TirTir-Centella-Cleansing-Wash.jpg?v=2
+photo: /images/items/Korea-TirTir-Centella-Cleansing-Wash.jpg?v=20260618
 pendingPhoto: false
 affiliateUrl: "https://www.amazon.com/s?k=tirtir+centella+cleansing+wash&tag=trovecollec0d-20"
 affiliateProgram: "Amazon Associates"

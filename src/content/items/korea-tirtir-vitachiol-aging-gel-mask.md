@@ -6,7 +6,7 @@ subcategoryOrder: 18
 itemOrder: 15
 country: "South Korea"
 curator: "Micki"
-photo: /images/items/Korea-TirTir-Vitachiol-Aging-Gel-Mask.jpg
+photo: /images/items/Korea-TirTir-Vitachiol-Aging-Gel-Mask.jpg?v=20260618
 pendingPhoto: false
 affiliateUrl: "https://www.amazon.com/s?k=tirtir+vitachiol+gel+mask&tag=trovecollec0d-20"
 affiliateProgram: "Amazon Associates"

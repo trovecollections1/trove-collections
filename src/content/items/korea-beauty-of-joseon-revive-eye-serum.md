@@ -6,7 +6,7 @@ subcategoryOrder: 14
 itemOrder: 12
 country: "South Korea"
 curator: "Micki"
-photo: /images/items/Korea-Beauty-of-Joseon-Revive-Eye-Serum.jpg?v=2
+photo: /images/items/Korea-Beauty-of-Joseon-Revive-Eye-Serum.jpg?v=20260618
 pendingPhoto: false
 affiliateUrl: "https://www.amazon.com/dp/B0B45LL4DD?tag=trovecollec0d-20"
 ---

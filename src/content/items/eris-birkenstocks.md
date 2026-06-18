@@ -5,7 +5,7 @@ subcategory: "CLOTHING & SHOES"
 subcategoryOrder: 3
 itemOrder: 19
 curator: "Micki"
-photo: /images/items/eris-birkenstocks.png
+photo: /images/items/eris-birkenstocks.png?v=20260618
 pendingPhoto: false
 affiliateUrl: "https://www.amazon.com/dp/B07N13RFC1?tag=trovecollec0d-20"
 ---

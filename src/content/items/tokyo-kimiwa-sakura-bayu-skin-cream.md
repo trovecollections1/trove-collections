@@ -7,7 +7,7 @@ itemOrder: 6
 country: "Japan"
 city: "Tokyo"
 curator: "Angie"
-photo: /images/items/Japan-Tokyo-Kimiwa-Sakura-Bayu-Skin-Cream.jpg
+photo: /images/items/Japan-Tokyo-Kimiwa-Sakura-Bayu-Skin-Cream.jpg?v=20260618
 pendingPhoto: false
 ---
 

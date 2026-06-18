@@ -6,7 +6,7 @@ subcategoryOrder: 6
 itemOrder: 1
 country: "USA"
 curator: "Mic"
-photo: /images/items/na-tarte-tartelette-xl-tubing-mascara.png
+photo: /images/items/na-tarte-tartelette-xl-tubing-mascara.png?v=20260618
 pendingPhoto: false
 affiliateUrl: "https://www.amazon.com/dp/B0D8CHGC5B?tag=trovecollec0d-20"
 ---

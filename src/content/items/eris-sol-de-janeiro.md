@@ -5,7 +5,7 @@ subcategory: "BEAUTY"
 subcategoryOrder: 1
 itemOrder: 2.3
 curator: "Eris"
-photo: /images/items/eris-sol-de-janeiro-v2.png
+photo: /images/items/eris-sol-de-janeiro-v2.png?v=20260618
 pendingPhoto: false
 affiliateUrl: "https://www.amazon.com/dp/B013XKHA4M?tag=trovecollec0d-20"
 ---

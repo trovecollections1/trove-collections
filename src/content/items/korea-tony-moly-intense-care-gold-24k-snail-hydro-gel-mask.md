@@ -6,7 +6,7 @@ subcategoryOrder: 18
 itemOrder: 16
 country: "South Korea"
 curator: "Micki"
-photo: /images/items/Korea-Tony-Moly-Gold-24K-Snail-Hydro-Gel-Mask.jpg
+photo: /images/items/Korea-Tony-Moly-Gold-24K-Snail-Hydro-Gel-Mask.jpg?v=20260618
 pendingPhoto: false
 ---
 
