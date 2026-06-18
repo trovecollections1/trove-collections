@@ -1,0 +1,139 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import ProductCard from '../../components/ProductCard.astro';
+
+// The Kitchen collection gathers every edible + kitchenware item from across the
+// site into one place. Items are NOT moved — they still live in their home
+// regions (East Asia, Europe, Latin America). This page pulls them together by
+// type via explicit slug lists, in a deliberate order.
+const KITCHEN_SECTIONS = [
+  { header: 'COFFEE', slugs: [
+    'latam-caf-britt-regular-ground-arabica',
+    'latam-caf-britt-decaffeinated-ground-arabica',
+    'latam-caf-britt-milk-chocolate-covered-coffee-beans',
+    'latam-caf-britt-dark-chocolate-covered-coffee-beans',
+    'latam-caf-britt-white-chocolate-covered-coffee-beans',
+  ]},
+  { header: 'SNACKS & SWEETS', slugs: [
+    'tokyo-royce-chocolate-nama-chocolate-chocolate-covered-potato-chips',
+    'tokyo-mary-s-fancy-chocolates-box',
+    'tokyo-tokyo-banana-cookie-sand',
+    'tokyo-neuf-neuf-i-love-custard-custard-cookie',
+    'tokyo-mamemasa-wasabi-peanuts-kyoto-est-1884',
+    'tokyo-brewer-s-2-go-bakery-at-ana-intercontinental-tokyo',
+    'europe-mulino-bianco-abbracci-cookies',
+  ]},
+  { header: 'SAUCES, HONEY & PANTRY', slugs: [
+    'tokyo-mizkan-yuzu-ponzu',
+    'tokyo-yuzu-juice-yuzu-vinegar',
+    'latam-d-elidas-picante-chombo',
+    'europe-apicella-millefiori-organic-honey',
+  ]},
+  { header: 'DRINKS', slugs: [
+    'tokyo-dassai-23-asahi-shuzo-yamaguchi',
+    'tokyo-iichiko-barley-sh-ch-from-sanwa-shurui-oita',
+    'europe-bolla-amarone-della-valpolicella-classico-2021',
+    'europe-russo-1899-crema-di-melone-liqueur',
+  ]},
+  { header: 'SERVEWARE & COOKWARE', slugs: [
+    'tokyo-japanese-sushi-serving-platter-celadon-oribe-style-ceramic',
+    'tokyo-kyoto-temple-sake-cups-set-of-four',
+    'tokyo-the-chopstick-drawer-mixed-pairs-ceramic-rests-gathered-over-years',
+    'europe-olio-tuscan-olive-oil-cruet',
+    'europe-munich-oktoberfest-2002-stein',
+    'europe-cavalier-motif-beer-stein-with-pewter-lid',
+    'europe-eisgrub-br-u-mainz-ceramic-beer-mug-pair',
+    'latam-disco-de-arado-cast-iron-polenta-pan',
+  ]},
+];
+
+const all = await getCollection('items');
+const bySlug = new Map(all.map(i => [i.slug, i]));
+const sections = KITCHEN_SECTIONS
+  .map(s => ({ header: s.header, list: s.slugs.map(sl => bySlug.get(sl)).filter(Boolean) }))
+  .filter(s => s.list.length > 0);
+const total = sections.reduce((n, s) => n + s.list.length, 0);
+---
+
+<Layout title="Kitchen & Table — Trove Collections">
+  <header class="collection-header">
+    <p class="muted breadcrumb"><a href="/collections">All Collections</a></p>
+    <h1>Kitchen &amp; Table</h1>
+    <p class="intro">
+      The edible half of the trove — the Café Britt coffee my mom reorders by the
+      bag, the Tokyo snacks that never survive the flight home, Tanya's Lake Como
+      honey, Auntie Kristen's Panama hot sauce — plus the serving pieces it all
+      gets eaten and poured from. Everything's still filed under its home region;
+      this is just the whole table, gathered in one place. — Eris
+    </p>
+  </header>
+
+  {total === 0 ? (
+    <p class="muted empty">No kitchen items yet — coming soon.</p>
+  ) : (
+    <div class="subcategories">
+      {sections.map((s) => (
+        <section class="subcategory">
+          <h2 class="subcat-header">{s.header}</h2>
+          <div class="grid">
+            {s.list.map((item) => (
+              <ProductCard
+                name={item.data.name}
+                curator={item.data.curator}
+                blurb={item.body.slice(0, 220).trim() + (item.body.length > 220 ? '…' : '')}
+                photo={item.data.photo}
+                additionalPhotos={item.data.additionalPhotos}
+                affiliateUrl={item.data.affiliateUrl}
+                similarAffiliateUrl={item.data.similarAffiliateUrl}
+                pendingPhoto={item.data.pendingPhoto}
+                slug={item.slug}
+              />
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+  )}
+</Layout>
+
+<style>
+  .collection-header {
+    margin-bottom: 2rem;
+  }
+  .breadcrumb { margin-bottom: 0.5rem; font-size: 0.9rem; }
+  .breadcrumb a { color: var(--muted); border: 0; }
+  .intro {
+    max-width: 60ch;
+    font-size: 1.05rem;
+    margin-top: 0.75rem;
+  }
+  .subcategories {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .subcategory { margin: 0; }
+  .subcat-header {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  @media (min-width: 600px) {
+    .grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (min-width: 900px) {
+    .grid { grid-template-columns: 1fr 1fr 1fr; }
+  }
+  .empty { margin-top: 2rem; font-style: italic; }
+</style>
