@@ -8,6 +8,8 @@ country: "South Korea"
 curator: "Micki"
 photo: /images/items/Korea-TirTir-Ceramic-Cream.jpg?v=2
 pendingPhoto: false
+affiliateUrl: "https://www.amazon.com/s?k=tirtir+ceramic+cream&tag=trovecollec0d-20"
+affiliateProgram: "Amazon Associates"
 ---
 
 What Micki uses on long flights. TirTir Ceramic Cream is heavier than the Beauty of Joseon Dynasty Cream — meant to lock moisture in rather than disappear — and that weight is exactly what 11 hours of cabin air demands. The two creams live in her bag together: Joseon on the ground, TirTir at altitude. — Eris

@@ -8,6 +8,8 @@ country: "South Korea"
 curator: "Micki"
 photo: /images/items/Korea-TirTir-Centella-Cleansing-Wash.jpg?v=2
 pendingPhoto: false
+affiliateUrl: "https://www.amazon.com/s?k=tirtir+centella+cleansing+wash&tag=trovecollec0d-20"
+affiliateProgram: "Amazon Associates"
 ---
 
 The third in the TirTir cleansing trio. A gentle water-based wash with centella asiatica (cica) — the calming ingredient K-beauty introduced to Western shelves. Pairs with the cleansing balm and the powder wash: balm to dissolve, powder to exfoliate, this to settle the skin back down. Particularly forgiving when whatever's left of the routine is off. — Eris
