@@ -8,6 +8,8 @@ country: "Germany"
 curator: "Kristen"
 photo: /images/items/Germany-cavalier-beer-stein-pewter-lid.jpg
 pendingPhoto: false
+similarAffiliateUrl: "https://www.amazon.com/s?k=german+beer+stein+pewter+lid&tag=trovecollec0d-20"
+affiliateProgram: "Amazon Associates"
 ---
 
 Auntie Kristen's traditional German stein — cavalier figure circling the body, hinged pewter lid that hisses open the way the good ones do. Classic beer-hall shape, the silhouette every beer stein aspires to. Pairs naturally with her Oktoberfest 2002 — same shelf, different years of trips. — Eris
