@@ -23,11 +23,17 @@ const BEAUTY_SECTIONS = [
   { subcat: 'BEAUTY', header: "ERIS'S BEAUTY PICKS" },
 ];
 
+// Items to keep out of the Beauty page even though they sit in a beauty
+// subcategory elsewhere (they stay on their home pages — just not gathered here).
+const EXCLUDE_SLUGS = new Set([
+  'eris-laifen-electric-toothbrush', // shown on North America with a better photo
+]);
+
 const all = await getCollection('items');
 const sections = BEAUTY_SECTIONS
   .map(s => {
     const list = all
-      .filter(i => i.data.subcategory === s.subcat)
+      .filter(i => i.data.subcategory === s.subcat && !EXCLUDE_SLUGS.has(i.slug))
       .sort((a, b) => (a.data.itemOrder ?? 0) - (b.data.itemOrder ?? 0));
     return { ...s, list };
   })
