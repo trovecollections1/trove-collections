@@ -8,6 +8,8 @@ country: "USA"
 curator: "Mic"
 photo: /images/items/na-cozy-earth-bamboo-socks.png?v=2
 pendingPhoto: false
+affiliateUrl: "https://www.amazon.com/s?k=cozy+earth+bamboo+socks&tag=trovecollec0d-20"
+affiliateProgram: "Amazon Associates"
 ---
 
 Same bamboo viscose construction as the loungewear, in sock form. Breathable, soft, stays-up. Multiple colorways — the sock that completes the Cozy Earth uniform. — Eris

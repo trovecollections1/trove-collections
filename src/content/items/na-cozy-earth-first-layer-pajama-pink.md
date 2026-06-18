@@ -8,6 +8,8 @@ country: "USA"
 curator: "Mic"
 photo: /images/items/na-cozy-earth-soft-pink-pajamas.jpg
 pendingPhoto: false
+affiliateUrl: "https://www.amazon.com/s?k=cozy+earth+bamboo+pajamas&tag=trovecollec0d-20"
+affiliateProgram: "Amazon Associates"
 ---
 
 The lightest-weight bamboo viscose Cozy Earth makes — first layer for sleeping, layer under everything else for travel. The warm-blush pink that goes with everything. For sensitive sleepers and anyone who runs hot. — Eris

@@ -8,6 +8,8 @@ country: "USA"
 curator: "Mic"
 photo: /images/items/na-cozy-earth-cuddle-blanket-throw-bubble-texture.png
 pendingPhoto: false
+affiliateUrl: "https://www.amazon.com/s?k=cozy+earth+blanket&tag=trovecollec0d-20"
+affiliateProgram: "Amazon Associates"
 ---
 
 Mic's couch blanket. The one you reach for first. Heavier weight than the lounge wear, designed for the couch — available in the smooth-throw and the bubble-texture versions. Soft enough that you don't reach for anything else. — Eris
