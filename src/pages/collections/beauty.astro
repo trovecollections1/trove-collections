@@ -1,0 +1,120 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import ProductCard from '../../components/ProductCard.astro';
+
+// The Beauty collection gathers every skincare / makeup / fragrance item from
+// across the site into one place. Items are NOT moved — they still live in
+// their home regions (East Asia, North America, Eris's Picks). This page pulls
+// them together by their beauty subcategories, in a deliberate order: the
+// Korean/Japanese routine first (the most-tested heart of the trove), then
+// Mic's vanity, then Eris's own picks.
+const BEAUTY_SECTIONS = [
+  { subcat: 'CLEANSERS & EXFOLIANTS', header: 'CLEANSERS & EXFOLIANTS' },
+  { subcat: 'SERUMS & ESSENCES', header: 'SERUMS & ESSENCES' },
+  { subcat: 'CREAMS & MOISTURIZERS', header: 'CREAMS & MOISTURIZERS' },
+  { subcat: 'EYE CARE', header: 'EYE CARE' },
+  { subcat: 'LIP CARE', header: 'LIP CARE' },
+  { subcat: 'SUNSCREEN, PRIMER & COLOR CARE', header: 'SUNSCREEN, PRIMER & COLOR CARE' },
+  { subcat: 'TREATMENTS & TOOLS', header: 'TREATMENTS & TOOLS' },
+  { subcat: 'BEAUTY & BODY', header: 'BODY & SKIN' },
+  { subcat: "FROM MIC'S VANITY — LANCÔME", header: "FROM MIC'S VANITY — LANCÔME" },
+  { subcat: "FROM MIC'S VANITY — OTHER FAVORITES", header: "FROM MIC'S VANITY — OTHER FAVORITES" },
+  { subcat: 'BEAUTY', header: "ERIS'S BEAUTY PICKS" },
+];
+
+const all = await getCollection('items');
+const sections = BEAUTY_SECTIONS
+  .map(s => {
+    const list = all
+      .filter(i => i.data.subcategory === s.subcat)
+      .sort((a, b) => (a.data.itemOrder ?? 0) - (b.data.itemOrder ?? 0));
+    return { ...s, list };
+  })
+  .filter(s => s.list.length > 0);
+
+const total = sections.reduce((n, s) => n + s.list.length, 0);
+---
+
+<Layout title="Beauty — Trove Collections">
+  <header class="collection-header">
+    <p class="muted breadcrumb"><a href="/collections">All Collections</a></p>
+    <h1>Beauty</h1>
+    <p class="intro">
+      Skincare and makeup are the most-repurchased things in this whole trove —
+      the Korean serums and creams that get bought again every Tokyo and Seoul
+      run, the Lancôme my mom has worn through thirty years of flying, and a few
+      things I've talked my friends into. They still live in their home regions,
+      but everyone kept asking where the TirTir and the creams were — so here's
+      the whole shelf, gathered in one place. — Eris
+    </p>
+  </header>
+
+  {total === 0 ? (
+    <p class="muted empty">No beauty items yet — coming soon.</p>
+  ) : (
+    <div class="subcategories">
+      {sections.map((s) => (
+        <section class="subcategory">
+          <h2 class="subcat-header">{s.header}</h2>
+          <div class="grid">
+            {s.list.map((item) => (
+              <ProductCard
+                name={item.data.name}
+                curator={item.data.curator}
+                blurb={item.body.slice(0, 220).trim() + (item.body.length > 220 ? '…' : '')}
+                photo={item.data.photo}
+                additionalPhotos={item.data.additionalPhotos}
+                affiliateUrl={item.data.affiliateUrl}
+                similarAffiliateUrl={item.data.similarAffiliateUrl}
+                pendingPhoto={item.data.pendingPhoto}
+                slug={item.slug}
+              />
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+  )}
+</Layout>
+
+<style>
+  .collection-header {
+    margin-bottom: 2rem;
+  }
+  .breadcrumb { margin-bottom: 0.5rem; font-size: 0.9rem; }
+  .breadcrumb a { color: var(--muted); border: 0; }
+  .intro {
+    max-width: 60ch;
+    font-size: 1.05rem;
+    margin-top: 0.75rem;
+  }
+  .subcategories {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .subcategory { margin: 0; }
+  .subcat-header {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  @media (min-width: 600px) {
+    .grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (min-width: 900px) {
+    .grid { grid-template-columns: 1fr 1fr 1fr; }
+  }
+  .empty { margin-top: 2rem; font-style: italic; }
+</style>
