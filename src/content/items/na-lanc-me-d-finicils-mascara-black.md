@@ -8,6 +8,8 @@ country: "USA"
 curator: "Mic"
 photo: /images/items/na-lanc-me-d-finicils-mascara-black.png
 pendingPhoto: false
+affiliateUrl: "https://www.amazon.com/s?k=lancome+definicils+mascara&tag=trovecollec0d-20"
+affiliateProgram: "Amazon Associates"
 ---
 
 Lancôme Définicils has been the natural-but-defined mascara for decades — lengthens without clumping, holds without smudging. Mic's daily-rotation pick. — Eris
