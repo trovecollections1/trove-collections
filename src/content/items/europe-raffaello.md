@@ -6,7 +6,7 @@ subcategoryOrder: 2
 itemOrder: 17
 country: "Italy"
 curator: "Tanya"
-photo: /images/items/europe-raffaello.png?v=20260630
+photo: /images/items/europe-raffaello.png?v=20260630b
 pendingPhoto: false
 similarAffiliateUrl: "https://www.amazon.com/s?k=Ferrero+Raffaello&tag=trovecollec0d-20"
 affiliateProgram: "Amazon Associates"

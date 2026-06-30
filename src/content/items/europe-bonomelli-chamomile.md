@@ -6,7 +6,7 @@ subcategoryOrder: 2
 itemOrder: 20
 country: "Italy"
 curator: "Tanya"
-photo: /images/items/europe-bonomelli-chamomile.png?v=20260630
+photo: /images/items/europe-bonomelli-chamomile.png?v=20260630b
 pendingPhoto: false
 similarAffiliateUrl: "https://www.amazon.com/s?k=Bonomelli+chamomile+soluble&tag=trovecollec0d-20"
 affiliateProgram: "Amazon Associates"

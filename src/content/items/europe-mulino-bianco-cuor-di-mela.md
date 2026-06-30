@@ -6,7 +6,7 @@ subcategoryOrder: 2
 itemOrder: 16
 country: "Italy"
 curator: "Tanya"
-photo: /images/items/europe-mulino-bianco-cuor-di-mela.png?v=20260630
+photo: /images/items/europe-mulino-bianco-cuor-di-mela.png?v=20260630b
 pendingPhoto: false
 similarAffiliateUrl: "https://www.amazon.com/s?k=Mulino+Bianco+Cuor+di+Mela&tag=trovecollec0d-20"
 affiliateProgram: "Amazon Associates"

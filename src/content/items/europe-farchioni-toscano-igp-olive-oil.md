@@ -6,7 +6,7 @@ subcategoryOrder: 2
 itemOrder: 9
 country: "Italy"
 curator: "Tanya"
-photo: /images/items/europe-farchioni-toscano-igp-olive-oil.png?v=20260630
+photo: /images/items/europe-farchioni-toscano-igp-olive-oil.png?v=20260630b
 pendingPhoto: false
 similarAffiliateUrl: "https://www.amazon.com/s?k=Toscano+IGP+extra+virgin+olive+oil&tag=trovecollec0d-20"
 affiliateProgram: "Amazon Associates"

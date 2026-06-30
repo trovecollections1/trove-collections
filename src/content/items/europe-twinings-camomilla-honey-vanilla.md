@@ -6,7 +6,7 @@ subcategoryOrder: 2
 itemOrder: 21
 country: "Italy"
 curator: "Tanya"
-photo: /images/items/europe-twinings-camomilla-honey-vanilla.png?v=20260630
+photo: /images/items/europe-twinings-camomilla-honey-vanilla.png?v=20260630b
 pendingPhoto: false
 similarAffiliateUrl: "https://www.amazon.com/s?k=Twinings+chamomile+honey+vanilla+tea&tag=trovecollec0d-20"
 affiliateProgram: "Amazon Associates"

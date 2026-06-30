@@ -6,7 +6,7 @@ subcategoryOrder: 2
 itemOrder: 22
 country: "Italy"
 curator: "Tanya"
-photo: /images/items/europe-cecchi-vino-nobile-montepulciano.png?v=20260630
+photo: /images/items/europe-cecchi-vino-nobile-montepulciano.png?v=20260630b
 pendingPhoto: false
 ---
 

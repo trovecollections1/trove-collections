@@ -6,7 +6,7 @@ subcategoryOrder: 2
 itemOrder: 5.5
 country: "Italy"
 curator: "Tanya"
-photo: /images/items/Italy-Lake-Como-Mulino-Bianco-Abbracci-cookies.jpg
+photo: /images/items/Italy-Lake-Como-Mulino-Bianco-Abbracci-cookies.jpg?v=20260630b
 pendingPhoto: false
 affiliateUrl: "https://www.amazon.com/dp/B0DW1V52JJ?tag=trovecollec0d-20"
 ---

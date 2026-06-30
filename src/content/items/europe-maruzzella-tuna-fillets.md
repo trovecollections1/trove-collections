@@ -6,7 +6,7 @@ subcategoryOrder: 2
 itemOrder: 12
 country: "Italy"
 curator: "Tanya"
-photo: /images/items/europe-maruzzella-tuna-fillets.png?v=20260630
+photo: /images/items/europe-maruzzella-tuna-fillets.png?v=20260630b
 pendingPhoto: false
 similarAffiliateUrl: "https://www.amazon.com/s?k=Italian+tuna+fillets+in+jar&tag=trovecollec0d-20"
 affiliateProgram: "Amazon Associates"

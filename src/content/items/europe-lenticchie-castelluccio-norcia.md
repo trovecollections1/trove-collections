@@ -6,7 +6,7 @@ subcategoryOrder: 2
 itemOrder: 11
 country: "Italy"
 curator: "Tanya"
-photo: /images/items/europe-lenticchie-castelluccio-norcia.png?v=20260630
+photo: /images/items/europe-lenticchie-castelluccio-norcia.png?v=20260630b
 pendingPhoto: false
 similarAffiliateUrl: "https://www.amazon.com/s?k=lenticchie+Castelluccio+di+Norcia+lentils&tag=trovecollec0d-20"
 affiliateProgram: "Amazon Associates"

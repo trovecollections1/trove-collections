@@ -6,7 +6,7 @@ subcategoryOrder: 2
 itemOrder: 10
 country: "Italy"
 curator: "Tanya"
-photo: /images/items/europe-saper-di-sapori-spelt-linguine.png?v=20260630
+photo: /images/items/europe-saper-di-sapori-spelt-linguine.png?v=20260630b
 pendingPhoto: false
 similarAffiliateUrl: "https://www.amazon.com/s?k=Italian+spelt+farro+linguine+pasta&tag=trovecollec0d-20"
 affiliateProgram: "Amazon Associates"

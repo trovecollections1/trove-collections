@@ -6,7 +6,7 @@ subcategoryOrder: 2
 itemOrder: 14
 country: "Italy"
 curator: "Tanya"
-photo: /images/items/europe-sapori-cantuccini-dark-chocolate.png?v=20260630
+photo: /images/items/europe-sapori-cantuccini-dark-chocolate.png?v=20260630b
 pendingPhoto: false
 similarAffiliateUrl: "https://www.amazon.com/s?k=cantuccini+dark+chocolate+almond+biscotti&tag=trovecollec0d-20"
 affiliateProgram: "Amazon Associates"
