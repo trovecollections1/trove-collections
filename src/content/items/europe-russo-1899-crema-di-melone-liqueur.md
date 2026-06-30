@@ -1,7 +1,7 @@
 ---
 name: "Russo 1899 Crema di Melone liqueur"
 region: "Europe"
-subcategory: "ITALY — LAKE COMO (Tanya's haul)"
+subcategory: "ITALY (Tanya's haul)"
 subcategoryOrder: 2
 itemOrder: 7
 country: "Italy"

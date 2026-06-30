@@ -1,7 +1,7 @@
 ---
 name: "Apicella Millefiori organic honey"
 region: "Europe"
-subcategory: "ITALY — LAKE COMO (Tanya's haul)"
+subcategory: "ITALY (Tanya's haul)"
 subcategoryOrder: 2
 itemOrder: 8
 country: "Italy"

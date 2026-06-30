@@ -1,7 +1,7 @@
 ---
 name: "Bolla Amarone della Valpolicella Classico 2021"
 region: "Europe"
-subcategory: "ITALY — LAKE COMO (Tanya's haul)"
+subcategory: "ITALY (Tanya's haul)"
 subcategoryOrder: 2
 itemOrder: 6
 country: "Italy"
