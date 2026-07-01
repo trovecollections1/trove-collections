@@ -8,8 +8,8 @@ country: "Italy"
 curator: "Tanya"
 photo: /images/items/europe-saper-di-sapori-spelt-linguine.png?v=20260630b
 pendingPhoto: false
-similarAffiliateUrl: "https://www.amazon.com/s?k=Italian+spelt+farro+linguine+pasta&tag=trovecollec0d-20"
-affiliateProgram: "Amazon Associates"
+similarAffiliateUrl: "https://www.awin1.com/cread.php?awinmid=124688&awinaffid=2918647&ued=https%3A%2F%2Fwholesaleitalianfood.com%2Fproducts%2Fmarulo-linguine"
+affiliateProgram: "Wholesale Italian Food"
 ---
 
 Spelt linguine, bronze-drawn and slow-dried the artisan way, from Tanya's Italian pantry. Spelt — farro — gives it a nuttier bite and a rougher surface that actually grabs the sauce instead of sliding out from under it. Ten minutes to al dente. — Eris
