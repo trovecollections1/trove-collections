@@ -8,7 +8,7 @@ country: "Italy"
 curator: "Tanya"
 photo: /images/items/europe-saper-di-sapori-spelt-linguine.png?v=20260630b
 pendingPhoto: false
-similarAffiliateUrl: "https://www.awin1.com/cread.php?awinmid=124688&awinaffid=2918647&ued=https%3A%2F%2Fwholesaleitalianfood.com%2Fproducts%2Fmarulo-linguine"
+similarAffiliateUrl: "https://www.awin1.com/cread.php?awinmid=124688&awinaffid=2918647&ued=https%3A%2F%2Fwholesaleitalianfood.com%2Fproducts%2Fmarulo-linguine-pasta-artisan-bronze-die-cut-pasta-12-pack-x-1-1-lb-copy"
 affiliateProgram: "Wholesale Italian Food"
 ---
 
