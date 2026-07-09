@@ -6,7 +6,7 @@ subcategoryOrder: 1
 itemOrder: 1
 country: "Costa Rica"
 curator: "Micki"
-photo: "/images/items/Costa-Rica-Cafe-Britt-decaffeinated-ground-Arabica.jpg"
+photo: "/images/items/Costa-Rica-Cafe-Britt-decaffeinated-ground-Arabica.jpg?v=20260709"
 affiliateUrl: "https://click.linksynergy.com/deeplink?id=4LmkxfEzS1k&mid=24419&murl=https%3A%2F%2Fwww.cafebritt.com%2Fproducts%2Fcosta-rican-decaffeinated-coffee"
 affiliateProgram: "Café Britt (Rakuten)"
 ---
