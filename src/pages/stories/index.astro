@@ -2,7 +2,40 @@
 import Layout from '../../layouts/Layout.astro';
 
 // Stories index — hand-curated for now; will become a content collection later.
+// Order is deliberate: the best three lead (author's call, 2026-07-26).
 const stories = [
+  {
+    slug: 'over-the-hump-y12-ferry',
+    title: 'Over the Hump and Half the World',
+    author: 'Micki',
+    region: 'Featured · The Aviation Geek Club',
+    excerpt: "Ferrying two Y-12s from Kunming to Lusaka in 1995 — a Calcutta detention, carols on 123.45 over the Gulf of Oman, and hand-pumped fuel in Addis. Now published in The Aviation Geek Club.",
+    date: '2026-06',
+  },
+  {
+    slug: 'the-philpott-legend',
+    title: 'The time Air Force Magazine wrote about Grandpa Jim',
+    author: 'Eris',
+    region: 'Heritage',
+    excerpt: '"There are major legends and minor legends, and then there was Philpott." A retired Major General wrote that — in print, in 1986. We didn\'t have to make any of this up.',
+    date: '2026-06',
+  },
+  {
+    slug: 'three-flights-one-night-tel-aviv',
+    title: 'Three flights, one night in Tel Aviv',
+    author: 'Eris',
+    region: 'Levant',
+    excerpt: "Thirty years of friendship, three separate flights, one hotel. The fairy godmothers all landed in Tel Aviv the same evening — and made it to dinner before scattering across the planet again.",
+    date: '2026-06',
+  },
+  {
+    externalUrl: 'https://generalaviationnews.com/2026/07/20/aircraft-maintenance-family-legacy/',
+    title: 'If You Fly It You Should Be Able To Fix It',
+    author: 'Micki',
+    region: 'Featured · General Aviation News',
+    excerpt: "\"If you fly it you should be able to fix it.\" The rule our family has lived by for generations — fifty years of a father's A&P, a hangar in Camarillo, and the maintenance legacy behind everything in The Hangar. Read it at General Aviation News →",
+    date: '2026-07',
+  },
   {
     slug: 'the-cave-pub-in-mainz',
     title: 'The pub that feels like a cave',
@@ -26,30 +59,6 @@ const stories = [
     region: 'North America',
     excerpt: "My great-grandmother chose specific heirlooms for each of her grandchildren. The pearls were what she chose for my mom — who's worn them almost every day for thirty years.",
     date: '2026-05',
-  },
-  {
-    slug: 'the-philpott-legend',
-    title: 'The time Air Force Magazine wrote about Grandpa Jim',
-    author: 'Eris',
-    region: 'Heritage',
-    excerpt: '"There are major legends and minor legends, and then there was Philpott." A retired Major General wrote that — in print, in 1986. We didn\'t have to make any of this up.',
-    date: '2026-06',
-  },
-  {
-    slug: 'three-flights-one-night-tel-aviv',
-    title: 'Three flights, one night in Tel Aviv',
-    author: 'Eris',
-    region: 'Levant',
-    excerpt: "Thirty years of friendship, three separate flights, one hotel. The fairy godmothers all landed in Tel Aviv the same evening — and made it to dinner before scattering across the planet again.",
-    date: '2026-06',
-  },
-  {
-    slug: 'over-the-hump-y12-ferry',
-    title: 'Over the Hump and Half the World',
-    author: 'Micki',
-    region: 'Featured · The Aviation Geek Club',
-    excerpt: "Ferrying two Y-12s from Kunming to Lusaka in 1995 — a Calcutta detention, carols on 123.45 over the Gulf of Oman, and hand-pumped fuel in Addis. Now published in The Aviation Geek Club.",
-    date: '2026-06',
   },
   {
     slug: 'coming-soon',
@@ -78,6 +87,8 @@ const stories = [
       <article class="story-card">
         {story.slug === 'coming-soon' ? (
           <h2>{story.title}</h2>
+        ) : story.externalUrl ? (
+          <h2><a href={story.externalUrl} target="_blank" rel="noopener">{story.title}</a></h2>
         ) : (
           <h2><a href={`/stories/${story.slug}`}>{story.title}</a></h2>
         )}
