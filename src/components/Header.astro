@@ -1,17 +1,11 @@
 ---
-const regions = [
-  { label: 'East Asia', href: '/collections/east-asia' },
-  { label: 'Europe', href: '/collections/europe' },
-  { label: 'Latin America', href: '/collections/latin-america' },
-  { label: 'Levant', href: '/collections/levant' },
-  { label: 'North America', href: '/collections/north-america' },
-  { label: 'Oceania', href: '/collections/oceania' },
-  { label: 'Travel Gear', href: '/collections/travel-gear' },
-  { label: 'Crew Gear', href: '/collections/crew-gear' },
-  { label: 'Business Attire', href: '/ladies-business-attire' },
-  { label: 'Beauty', href: '/collections/beauty' },
-  { label: 'Kitchen & Table', href: '/collections/kitchen' },
-  { label: "Eris's Picks", href: '/collections/eris' },
+const navLinks = [
+  { label: 'Collections', href: '/collections' },
+  { label: 'Stories', href: '/stories' },
+  { label: 'Heritage', href: '/heritage' },
+  { label: 'The Hangar', href: '/hangar' },
+  { label: 'The Novel', href: '/novel' },
+  { label: 'About', href: '/about' },
 ];
 ---
 
@@ -27,11 +21,9 @@ const regions = [
       />
     </a>
     <nav>
-      {regions.map(r => (
+      {navLinks.map(r => (
         <a href={r.href}>{r.label}</a>
       ))}
-      <a href="/stories" class="muted-link">Stories</a>
-      <a href="/about" class="muted-link">About</a>
     </nav>
   </div>
 </header>
