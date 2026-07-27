@@ -11,14 +11,24 @@ import Layout from '../../layouts/Layout.astro';
     the making of the book, in story order, from a shore twelve thousand years gone to a door
     that opens.</p>
 
-    <!-- Direct download for now; swap to email-capture (BookFunnel/other) before launch. -->
+    <!-- Zoho Campaigns list signup (City of Trove Readers) — clean POST to their endpoint. -->
     <div class="signup">
-      <p><a class="button" href="/downloads/the-trove-portfolio.pdf" download>
-        Download the Portfolio (PDF) →</a></p>
-      <p class="small muted">Thirteen more plates are still being painted. Want them as they're
-      finished — and first word when Book Two's gate opens? Write us:
-      <a href="mailto:hello@trovecollections.com?subject=Keep%20me%20posted%20on%20City%20of%20Trove">hello@trovecollections.com</a>.
-      No spam, ever — the watch keeps its word.</p>
+      <form method="POST" action="https://zgnp-zngp.maillist-manage.com/weboptin.zc" target="_blank">
+        <input type="email" name="CONTACT_EMAIL" placeholder="Your email" required class="email-input" />
+        <input type="hidden" name="submitType" value="optinCustomView" />
+        <input type="hidden" name="formType" value="QuickForm" />
+        <input type="hidden" name="zx" value="13712fb43" />
+        <input type="hidden" name="zcvers" value="3.0" />
+        <input type="hidden" name="mode" value="OptinCreateView" />
+        <input type="hidden" name="zcld" value="1176941e7f923404b" />
+        <input type="hidden" name="zctd" value="1176941e7f9233f71" />
+        <input type="hidden" name="zc_trackCode" value="ZCFORMVIEW" />
+        <input type="hidden" name="zc_formIx" value="3zbf21b4108c4964e28dc95a28182c41964d1b5a660b0273baf8a5439bfc2408a2" />
+        <input type="hidden" name="viewFrom" value="URL_ACTION" />
+        <button type="submit" class="button">Send me the Portfolio →</button>
+      </form>
+      <p class="small muted">You'll also be first to hear when Book Two's gate opens. No spam,
+      ever — the watch keeps its word. (Prefer no email? <a href="/downloads/the-trove-portfolio.pdf" download>Download the PDF directly</a>.)</p>
     </div>
 
     <hr />
@@ -32,6 +42,7 @@ import Layout from '../../layouts/Layout.astro';
   .magnet h1 { letter-spacing: 0.12em; }
   .lede { font-size: 1.05rem; line-height: 1.7; text-align: left; }
   .signup { margin: 2rem 0; }
-  .button { display: inline-block; padding: 0.7rem 1.4rem; border: 1px solid var(--ink); border-radius: 2px; }
+  .button { display: inline-block; padding: 0.7rem 1.4rem; border: 1px solid var(--ink); border-radius: 2px; background: none; font: inherit; cursor: pointer; }
+  .email-input { padding: 0.65rem 0.9rem; border: 1px solid var(--rule); border-radius: 2px; font: inherit; width: min(20rem, 90%); margin-right: 0.5rem; margin-bottom: 0.75rem; }
   .small { font-size: 0.9rem; }
 </style>
